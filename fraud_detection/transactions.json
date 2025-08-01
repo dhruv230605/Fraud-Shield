@@ -1,0 +1,1602 @@
+[
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 1824.42,
+    "merchant": "Udemy",
+    "location": "Bangalore",
+    "timestamp": "2025-02-12T23:17:32.981035",
+    "category": "education"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 9988.0,
+    "merchant": "Ajio",
+    "location": "Bangalore",
+    "timestamp": "2025-04-26T12:40:29.740355",
+    "category": "shopping"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 633.58,
+    "merchant": "Udemy",
+    "location": "Pune",
+    "timestamp": "2025-01-31T04:27:20.087872",
+    "category": "education"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 438.32,
+    "merchant": "Pharmeasy",
+    "location": "Pune",
+    "timestamp": "2024-08-20T13:04:28.610543",
+    "category": "healthcare"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 6383.8,
+    "merchant": "edX",
+    "location": "Ahmedabad",
+    "timestamp": "2024-12-31T04:54:39.642406",
+    "category": "education"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 8718.22,
+    "merchant": "HDFC Securities",
+    "location": "Bangalore",
+    "timestamp": "2024-10-28T13:34:18.067820",
+    "category": "investment"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 6239.61,
+    "merchant": "IRCTC",
+    "location": "Hyderabad",
+    "timestamp": "2025-03-14T00:14:50.693357",
+    "category": "travel"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 6854.34,
+    "merchant": "D-Mart",
+    "location": "Mumbai",
+    "timestamp": "2024-11-18T22:48:56.963292",
+    "category": "groceries"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 9746.92,
+    "merchant": "Uber Eats",
+    "location": "Chennai",
+    "timestamp": "2024-12-19T07:21:49.683666",
+    "category": "dining"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 5772.86,
+    "merchant": "Jio",
+    "location": "Mumbai",
+    "timestamp": "2025-03-11T22:55:22.875995",
+    "category": "utilities"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 2349.86,
+    "merchant": "ICICI Direct",
+    "location": "Pune",
+    "timestamp": "2024-12-16T05:58:33.503076",
+    "category": "investment"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 5338.19,
+    "merchant": "Myntra",
+    "location": "Delhi",
+    "timestamp": "2024-10-15T20:08:03.146032",
+    "category": "shopping"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 4758.24,
+    "merchant": "Airbnb",
+    "location": "Ahmedabad",
+    "timestamp": "2025-04-19T23:45:24.444215",
+    "category": "travel"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 6420.57,
+    "merchant": "MedPlus",
+    "location": "Pune",
+    "timestamp": "2024-09-17T20:19:24.523558",
+    "category": "healthcare"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 7306.69,
+    "merchant": "Zerodha",
+    "location": "Chennai",
+    "timestamp": "2024-12-10T19:12:56.362904",
+    "category": "investment"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 8615.28,
+    "merchant": "Reliance Fresh",
+    "location": "Ahmedabad",
+    "timestamp": "2024-12-11T05:35:43.312813",
+    "category": "groceries"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 3003.49,
+    "merchant": "Amazon Prime",
+    "location": "Ahmedabad",
+    "timestamp": "2024-12-17T04:53:20.599486",
+    "category": "entertainment"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 6038.24,
+    "merchant": "Flipkart",
+    "location": "Ahmedabad",
+    "timestamp": "2025-07-12T02:52:21.401061",
+    "category": "electronics"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 8586.35,
+    "merchant": "Domino's",
+    "location": "Mumbai",
+    "timestamp": "2025-01-23T02:23:59.865626",
+    "category": "dining"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 7493.81,
+    "merchant": "Reliance Digital",
+    "location": "Hyderabad",
+    "timestamp": "2024-07-23T23:46:06.284210",
+    "category": "electronics"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 826.2,
+    "merchant": "Poorvika",
+    "location": "Bangalore",
+    "timestamp": "2025-03-06T03:22:29.841844",
+    "category": "electronics"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 4499.52,
+    "merchant": "Poorvika",
+    "location": "Mumbai",
+    "timestamp": "2025-01-08T14:55:16.996929",
+    "category": "electronics"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 1075.68,
+    "merchant": "edX",
+    "location": "Delhi",
+    "timestamp": "2025-06-24T01:53:55.812862",
+    "category": "education"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 1435.77,
+    "merchant": "McDonald's",
+    "location": "Pune",
+    "timestamp": "2025-05-15T02:49:59.034507",
+    "category": "dining"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 4455.9,
+    "merchant": "Flipkart",
+    "location": "Hyderabad",
+    "timestamp": "2025-02-11T05:49:13.671842",
+    "category": "electronics"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 4871.68,
+    "merchant": "Amazon Prime",
+    "location": "Chennai",
+    "timestamp": "2025-04-06T18:37:14.222064",
+    "category": "entertainment"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 1053.31,
+    "merchant": "Poorvika",
+    "location": "Delhi",
+    "timestamp": "2024-11-20T00:39:39.819873",
+    "category": "electronics"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 8531.07,
+    "merchant": "Myntra",
+    "location": "Delhi",
+    "timestamp": "2025-02-02T04:47:30.109377",
+    "category": "shopping"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 5873.46,
+    "merchant": "MakeMyTrip",
+    "location": "Mumbai",
+    "timestamp": "2025-06-12T15:27:32.928233",
+    "category": "travel"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 7370.65,
+    "merchant": "WhiteHat Jr",
+    "location": "Chennai",
+    "timestamp": "2024-12-10T07:20:20.830707",
+    "category": "education"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 100.52,
+    "merchant": "Coursera",
+    "location": "Delhi",
+    "timestamp": "2024-08-12T06:28:11.908226",
+    "category": "education"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 215.33,
+    "merchant": "KFC",
+    "location": "Mumbai",
+    "timestamp": "2024-08-30T10:52:03.582566",
+    "category": "dining"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 2870.53,
+    "merchant": "D-Mart",
+    "location": "Delhi",
+    "timestamp": "2025-04-07T13:07:29.178109",
+    "category": "groceries"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 4175.94,
+    "merchant": "Apollo",
+    "location": "Ahmedabad",
+    "timestamp": "2025-03-15T20:58:26.672452",
+    "category": "healthcare"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 3063.99,
+    "merchant": "Pharmeasy",
+    "location": "Pune",
+    "timestamp": "2025-02-06T19:07:01.200538",
+    "category": "healthcare"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 3762.78,
+    "merchant": "McDonald's",
+    "location": "Mumbai",
+    "timestamp": "2025-07-20T08:45:27.264890",
+    "category": "dining"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 3489.14,
+    "merchant": "BigBasket",
+    "location": "Chennai",
+    "timestamp": "2025-02-14T03:33:52.807143",
+    "category": "groceries"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 8232.67,
+    "merchant": "Apollo",
+    "location": "Hyderabad",
+    "timestamp": "2025-05-01T18:21:52.538435",
+    "category": "healthcare"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 5571.47,
+    "merchant": "Byju's",
+    "location": "Ahmedabad",
+    "timestamp": "2025-01-25T23:09:12.191884",
+    "category": "education"
+  },
+  {
+    "user_id": "james.gonzalez@example.com",
+    "amount": 3167.67,
+    "merchant": "Vijay Sales",
+    "location": "Chennai",
+    "timestamp": "2024-08-30T07:38:15.089211",
+    "category": "electronics"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 5661.04,
+    "merchant": "Vodafone",
+    "location": "Pune",
+    "timestamp": "2025-06-24T16:28:14.544663",
+    "category": "utilities"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 9358.06,
+    "merchant": "Airtel",
+    "location": "Kolkata",
+    "timestamp": "2025-07-05T09:12:20.118125",
+    "category": "utilities"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 9738.91,
+    "merchant": "Unacademy",
+    "location": "Pune",
+    "timestamp": "2025-05-11T16:31:37.685348",
+    "category": "education"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 5014.42,
+    "merchant": "Zerodha",
+    "location": "Ahmedabad",
+    "timestamp": "2024-12-15T00:32:44.629601",
+    "category": "investment"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 2662.12,
+    "merchant": "Groww",
+    "location": "Ahmedabad",
+    "timestamp": "2025-04-28T01:40:15.439492",
+    "category": "investment"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 7130.64,
+    "merchant": "MakeMyTrip",
+    "location": "Hyderabad",
+    "timestamp": "2024-11-20T02:56:36.252716",
+    "category": "travel"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 7815.91,
+    "merchant": "Grofers",
+    "location": "Bangalore",
+    "timestamp": "2025-04-19T22:20:50.875464",
+    "category": "groceries"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 3675.95,
+    "merchant": "FoodPanda",
+    "location": "Kolkata",
+    "timestamp": "2025-03-21T20:27:40.213485",
+    "category": "dining"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 9072.08,
+    "merchant": "Myntra",
+    "location": "Pune",
+    "timestamp": "2025-02-07T15:55:20.618512",
+    "category": "shopping"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 3527.0,
+    "merchant": "MTNL",
+    "location": "Bangalore",
+    "timestamp": "2025-03-25T09:34:26.814521",
+    "category": "utilities"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 1371.03,
+    "merchant": "WhiteHat Jr",
+    "location": "Chennai",
+    "timestamp": "2024-08-05T12:39:34.099587",
+    "category": "education"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 9179.1,
+    "merchant": "Airtel",
+    "location": "Mumbai",
+    "timestamp": "2025-04-22T15:51:25.064998",
+    "category": "utilities"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 285.07,
+    "merchant": "Unacademy",
+    "location": "Hyderabad",
+    "timestamp": "2025-03-09T19:01:45.787086",
+    "category": "education"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 5463.33,
+    "merchant": "PVR",
+    "location": "Delhi",
+    "timestamp": "2024-09-26T16:43:19.183109",
+    "category": "entertainment"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 9636.08,
+    "merchant": "Reliance Fresh",
+    "location": "Pune",
+    "timestamp": "2025-02-04T01:46:16.280126",
+    "category": "groceries"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 671.74,
+    "merchant": "HDFC Securities",
+    "location": "Chennai",
+    "timestamp": "2025-02-21T13:32:11.855318",
+    "category": "investment"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 2464.76,
+    "merchant": "IRCTC",
+    "location": "Kolkata",
+    "timestamp": "2024-12-20T01:51:43.916909",
+    "category": "travel"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 5833.57,
+    "merchant": "Vodafone",
+    "location": "Delhi",
+    "timestamp": "2024-07-31T14:10:48.386564",
+    "category": "utilities"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 1934.34,
+    "merchant": "Ajio",
+    "location": "Bangalore",
+    "timestamp": "2024-11-28T09:26:08.561440",
+    "category": "shopping"
+  },
+  {
+    "user_id": "michele.hale@example.com",
+    "amount": 6222.17,
+    "merchant": "FoodPanda",
+    "location": "Kolkata",
+    "timestamp": "2025-05-20T20:22:56.513509",
+    "category": "dining"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 9924.08,
+    "merchant": "Unacademy",
+    "location": "Chennai",
+    "timestamp": "2024-10-01T23:05:48.166414",
+    "category": "education"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 6453.03,
+    "merchant": "Poorvika",
+    "location": "Pune",
+    "timestamp": "2025-02-18T08:48:14.103487",
+    "category": "electronics"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 916.48,
+    "merchant": "Amazon",
+    "location": "Kolkata",
+    "timestamp": "2024-10-28T08:19:57.550195",
+    "category": "electronics"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 5776.48,
+    "merchant": "Spencer's",
+    "location": "Pune",
+    "timestamp": "2025-06-12T20:06:22.375075",
+    "category": "groceries"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 8055.33,
+    "merchant": "Goibibo",
+    "location": "Hyderabad",
+    "timestamp": "2025-05-05T15:40:04.240031",
+    "category": "travel"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 8568.67,
+    "merchant": "MTNL",
+    "location": "Ahmedabad",
+    "timestamp": "2025-01-19T16:01:52.379806",
+    "category": "utilities"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 4424.57,
+    "merchant": "Reliance Digital",
+    "location": "Chennai",
+    "timestamp": "2025-01-26T08:32:14.481511",
+    "category": "electronics"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 5415.42,
+    "merchant": "Vijay Sales",
+    "location": "Hyderabad",
+    "timestamp": "2024-07-30T10:50:36.998218",
+    "category": "electronics"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 3254.73,
+    "merchant": "Ajio",
+    "location": "Hyderabad",
+    "timestamp": "2025-03-30T07:45:01.856616",
+    "category": "shopping"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 7783.86,
+    "merchant": "edX",
+    "location": "Delhi",
+    "timestamp": "2025-06-09T20:18:25.800725",
+    "category": "education"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 8788.69,
+    "merchant": "Flipkart",
+    "location": "Bangalore",
+    "timestamp": "2024-12-03T06:54:43.215383",
+    "category": "shopping"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 5134.49,
+    "merchant": "INOX",
+    "location": "Ahmedabad",
+    "timestamp": "2024-08-09T00:01:34.399066",
+    "category": "entertainment"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 2154.54,
+    "merchant": "McDonald's",
+    "location": "Ahmedabad",
+    "timestamp": "2025-03-13T20:17:54.204367",
+    "category": "dining"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 1774.49,
+    "merchant": "Upstox",
+    "location": "Kolkata",
+    "timestamp": "2025-01-05T00:29:43.225029",
+    "category": "investment"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 2271.75,
+    "merchant": "Pharmeasy",
+    "location": "Delhi",
+    "timestamp": "2024-12-01T16:18:34.625247",
+    "category": "healthcare"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 3084.25,
+    "merchant": "Croma",
+    "location": "Ahmedabad",
+    "timestamp": "2024-08-02T03:04:35.791788",
+    "category": "electronics"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 465.33,
+    "merchant": "Vijay Sales",
+    "location": "Kolkata",
+    "timestamp": "2025-05-21T18:33:53.093886",
+    "category": "electronics"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 6870.44,
+    "merchant": "KFC",
+    "location": "Hyderabad",
+    "timestamp": "2025-01-24T23:36:22.367104",
+    "category": "dining"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 7673.24,
+    "merchant": "ICICI Direct",
+    "location": "Hyderabad",
+    "timestamp": "2024-09-16T10:22:58.572385",
+    "category": "investment"
+  },
+  {
+    "user_id": "christopher.davis@example.com",
+    "amount": 1253.58,
+    "merchant": "Vijay Sales",
+    "location": "Ahmedabad",
+    "timestamp": "2024-11-05T09:37:04.310901",
+    "category": "electronics"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 2056.84,
+    "merchant": "Booking.com",
+    "location": "Delhi",
+    "timestamp": "2025-03-25T02:45:22.102277",
+    "category": "travel"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 2926.7,
+    "merchant": "Udemy",
+    "location": "Chennai",
+    "timestamp": "2024-08-23T07:08:24.150798",
+    "category": "education"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 8005.75,
+    "merchant": "Purplle",
+    "location": "Bangalore",
+    "timestamp": "2024-09-13T23:06:29.050431",
+    "category": "shopping"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 6476.4,
+    "merchant": "Swiggy",
+    "location": "Hyderabad",
+    "timestamp": "2025-06-07T16:18:10.153877",
+    "category": "dining"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 301.01,
+    "merchant": "More",
+    "location": "Pune",
+    "timestamp": "2024-10-09T06:49:15.201540",
+    "category": "groceries"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 4736.99,
+    "merchant": "MakeMyTrip",
+    "location": "Pune",
+    "timestamp": "2024-09-07T13:45:19.509632",
+    "category": "travel"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 3690.63,
+    "merchant": "ICICI Direct",
+    "location": "Kolkata",
+    "timestamp": "2025-03-15T05:10:34.404787",
+    "category": "investment"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 4037.23,
+    "merchant": "Ajio",
+    "location": "Pune",
+    "timestamp": "2025-04-13T02:45:00.353709",
+    "category": "shopping"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 3564.2,
+    "merchant": "Apollo",
+    "location": "Hyderabad",
+    "timestamp": "2025-03-27T08:36:43.287109",
+    "category": "healthcare"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 827.24,
+    "merchant": "edX",
+    "location": "Kolkata",
+    "timestamp": "2024-09-08T04:56:31.404418",
+    "category": "education"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 9348.48,
+    "merchant": "Tata Power",
+    "location": "Bangalore",
+    "timestamp": "2025-01-11T10:46:08.878375",
+    "category": "utilities"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 4740.45,
+    "merchant": "FoodPanda",
+    "location": "Kolkata",
+    "timestamp": "2025-05-13T14:08:07.645473",
+    "category": "dining"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 3969.55,
+    "merchant": "HDFC Securities",
+    "location": "Mumbai",
+    "timestamp": "2025-06-30T03:24:26.916120",
+    "category": "investment"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 1187.95,
+    "merchant": "Airtel",
+    "location": "Hyderabad",
+    "timestamp": "2025-02-19T23:38:45.781508",
+    "category": "utilities"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 556.84,
+    "merchant": "Pharmeasy",
+    "location": "Chennai",
+    "timestamp": "2025-03-14T12:21:54.640719",
+    "category": "healthcare"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 4483.61,
+    "merchant": "Jio",
+    "location": "Chennai",
+    "timestamp": "2024-08-04T06:57:10.655158",
+    "category": "utilities"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 7540.86,
+    "merchant": "Byju's",
+    "location": "Pune",
+    "timestamp": "2025-07-15T18:04:51.896287",
+    "category": "education"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 539.08,
+    "merchant": "Croma",
+    "location": "Delhi",
+    "timestamp": "2025-06-04T06:31:29.535977",
+    "category": "electronics"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 6219.85,
+    "merchant": "HDFC Securities",
+    "location": "Pune",
+    "timestamp": "2025-03-24T13:17:03.414425",
+    "category": "investment"
+  },
+  {
+    "user_id": "travis.kim@example.com",
+    "amount": 6917.67,
+    "merchant": "Amazon",
+    "location": "Kolkata",
+    "timestamp": "2025-02-18T18:09:20.513912",
+    "category": "electronics"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 6041.05,
+    "merchant": "HDFC Securities",
+    "location": "Delhi",
+    "timestamp": "2024-09-25T10:37:34.767205",
+    "category": "investment"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 2274.64,
+    "merchant": "Tata Power",
+    "location": "Delhi",
+    "timestamp": "2024-09-16T07:03:04.821340",
+    "category": "utilities"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 9434.94,
+    "merchant": "Booking.com",
+    "location": "Ahmedabad",
+    "timestamp": "2025-05-25T15:45:24.577909",
+    "category": "travel"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 3751.0,
+    "merchant": "Coursera",
+    "location": "Mumbai",
+    "timestamp": "2024-09-12T21:50:28.626463",
+    "category": "education"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 9977.35,
+    "merchant": "Myntra",
+    "location": "Delhi",
+    "timestamp": "2024-12-01T16:42:02.344298",
+    "category": "shopping"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 4878.76,
+    "merchant": "BookMyShow",
+    "location": "Kolkata",
+    "timestamp": "2025-03-31T17:31:34.835332",
+    "category": "entertainment"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 3092.9,
+    "merchant": "BigBasket",
+    "location": "Kolkata",
+    "timestamp": "2024-12-29T10:40:07.963915",
+    "category": "groceries"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 3651.94,
+    "merchant": "Amazon Prime",
+    "location": "Chennai",
+    "timestamp": "2024-08-25T05:25:18.750545",
+    "category": "entertainment"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 8160.39,
+    "merchant": "Flipkart",
+    "location": "Mumbai",
+    "timestamp": "2025-01-16T12:52:38.964862",
+    "category": "shopping"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 8644.02,
+    "merchant": "Byju's",
+    "location": "Ahmedabad",
+    "timestamp": "2025-01-03T06:15:58.175109",
+    "category": "education"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 5171.42,
+    "merchant": "Upstox",
+    "location": "Kolkata",
+    "timestamp": "2025-01-08T10:30:58.382051",
+    "category": "investment"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 3247.08,
+    "merchant": "Airbnb",
+    "location": "Kolkata",
+    "timestamp": "2025-06-20T19:39:55.947299",
+    "category": "travel"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 1700.63,
+    "merchant": "MakeMyTrip",
+    "location": "Mumbai",
+    "timestamp": "2025-03-15T06:00:58.455648",
+    "category": "travel"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 640.73,
+    "merchant": "Croma",
+    "location": "Ahmedabad",
+    "timestamp": "2024-10-27T21:26:55.169843",
+    "category": "electronics"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 8738.57,
+    "merchant": "Udemy",
+    "location": "Kolkata",
+    "timestamp": "2024-12-26T03:07:44.550295",
+    "category": "education"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 7508.93,
+    "merchant": "IRCTC",
+    "location": "Bangalore",
+    "timestamp": "2024-09-12T12:19:32.469022",
+    "category": "travel"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 5888.02,
+    "merchant": "Coursera",
+    "location": "Kolkata",
+    "timestamp": "2025-01-11T09:39:06.555926",
+    "category": "education"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 8087.49,
+    "merchant": "Netflix",
+    "location": "Mumbai",
+    "timestamp": "2024-12-14T04:19:27.282738",
+    "category": "entertainment"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 5399.35,
+    "merchant": "Cleartrip",
+    "location": "Pune",
+    "timestamp": "2024-10-23T07:35:31.046732",
+    "category": "travel"
+  },
+  {
+    "user_id": "lisa.carlson@example.com",
+    "amount": 3426.66,
+    "merchant": "Amazon Fresh",
+    "location": "Delhi",
+    "timestamp": "2025-03-18T14:05:37.266144",
+    "category": "groceries"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 1781.96,
+    "merchant": "Upstox",
+    "location": "Bangalore",
+    "timestamp": "2025-06-05T18:46:10.385093",
+    "category": "investment"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 4783.12,
+    "merchant": "Byju's",
+    "location": "Mumbai",
+    "timestamp": "2025-06-11T02:09:22.087439",
+    "category": "education"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 2584.77,
+    "merchant": "Upstox",
+    "location": "Chennai",
+    "timestamp": "2024-12-07T13:53:51.293891",
+    "category": "investment"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 4860.77,
+    "merchant": "Idea",
+    "location": "Delhi",
+    "timestamp": "2025-07-12T02:58:07.082715",
+    "category": "utilities"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 4908.15,
+    "merchant": "BigBasket",
+    "location": "Chennai",
+    "timestamp": "2025-06-15T17:55:51.914691",
+    "category": "groceries"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 1811.75,
+    "merchant": "Reliance Digital",
+    "location": "Kolkata",
+    "timestamp": "2024-12-20T05:38:37.520979",
+    "category": "electronics"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 6802.16,
+    "merchant": "Poorvika",
+    "location": "Chennai",
+    "timestamp": "2025-02-13T10:13:44.256355",
+    "category": "electronics"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 285.63,
+    "merchant": "MakeMyTrip",
+    "location": "Kolkata",
+    "timestamp": "2024-11-13T11:21:11.731791",
+    "category": "travel"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 5755.0,
+    "merchant": "Myntra",
+    "location": "Ahmedabad",
+    "timestamp": "2025-07-16T03:17:34.342169",
+    "category": "shopping"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 5637.87,
+    "merchant": "PVR",
+    "location": "Mumbai",
+    "timestamp": "2024-10-21T03:19:13.720434",
+    "category": "entertainment"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 1831.44,
+    "merchant": "BookMyShow",
+    "location": "Pune",
+    "timestamp": "2025-04-23T20:27:37.500234",
+    "category": "entertainment"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 8421.3,
+    "merchant": "MedPlus",
+    "location": "Chennai",
+    "timestamp": "2025-03-06T20:35:36.936978",
+    "category": "healthcare"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 4048.7,
+    "merchant": "Zerodha",
+    "location": "Pune",
+    "timestamp": "2025-04-19T16:14:49.488011",
+    "category": "investment"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 6050.44,
+    "merchant": "Amazon",
+    "location": "Mumbai",
+    "timestamp": "2025-04-09T09:12:21.060581",
+    "category": "electronics"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 8487.91,
+    "merchant": "D-Mart",
+    "location": "Pune",
+    "timestamp": "2024-08-20T19:00:32.714937",
+    "category": "groceries"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 5177.1,
+    "merchant": "More",
+    "location": "Delhi",
+    "timestamp": "2024-10-15T20:16:00.192662",
+    "category": "groceries"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 5542.97,
+    "merchant": "1mg",
+    "location": "Hyderabad",
+    "timestamp": "2024-09-05T03:00:55.922754",
+    "category": "healthcare"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 869.13,
+    "merchant": "Hotstar",
+    "location": "Chennai",
+    "timestamp": "2024-11-11T07:53:53.770503",
+    "category": "entertainment"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 2557.7,
+    "merchant": "Byju's",
+    "location": "Kolkata",
+    "timestamp": "2025-01-19T00:19:42.401775",
+    "category": "education"
+  },
+  {
+    "user_id": "roger.hughes@example.com",
+    "amount": 808.98,
+    "merchant": "Amazon",
+    "location": "Hyderabad",
+    "timestamp": "2025-04-27T12:55:52.116801",
+    "category": "electronics"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 785.03,
+    "merchant": "Amazon Fresh",
+    "location": "Kolkata",
+    "timestamp": "2024-12-09T08:47:23.826467",
+    "category": "groceries"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 2849.03,
+    "merchant": "PVR",
+    "location": "Bangalore",
+    "timestamp": "2025-05-13T03:33:51.406263",
+    "category": "entertainment"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 1553.35,
+    "merchant": "Croma",
+    "location": "Hyderabad",
+    "timestamp": "2024-11-17T11:09:14.847898",
+    "category": "electronics"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 8908.0,
+    "merchant": "Upstox",
+    "location": "Kolkata",
+    "timestamp": "2025-05-03T08:48:25.773496",
+    "category": "investment"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 683.73,
+    "merchant": "Ajio",
+    "location": "Pune",
+    "timestamp": "2025-07-19T01:26:26.104805",
+    "category": "shopping"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 5886.86,
+    "merchant": "Amazon Fresh",
+    "location": "Delhi",
+    "timestamp": "2024-08-11T18:17:47.074135",
+    "category": "groceries"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 8783.15,
+    "merchant": "Reliance Digital",
+    "location": "Pune",
+    "timestamp": "2024-10-03T12:36:11.986179",
+    "category": "electronics"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 3933.81,
+    "merchant": "FirstCry",
+    "location": "Kolkata",
+    "timestamp": "2024-12-01T14:17:29.335550",
+    "category": "shopping"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 9847.55,
+    "merchant": "Amazon Prime",
+    "location": "Hyderabad",
+    "timestamp": "2025-05-17T01:35:42.670757",
+    "category": "entertainment"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 4295.4,
+    "merchant": "Coursera",
+    "location": "Chennai",
+    "timestamp": "2024-08-16T09:47:36.098379",
+    "category": "education"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 567.1,
+    "merchant": "Airbnb",
+    "location": "Mumbai",
+    "timestamp": "2025-04-18T00:32:26.381302",
+    "category": "travel"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 6641.22,
+    "merchant": "Amazon",
+    "location": "Bangalore",
+    "timestamp": "2025-07-03T12:13:02.667826",
+    "category": "shopping"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 3602.04,
+    "merchant": "Uber Eats",
+    "location": "Hyderabad",
+    "timestamp": "2024-12-07T22:30:53.637932",
+    "category": "dining"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 8531.07,
+    "merchant": "Swiggy",
+    "location": "Bangalore",
+    "timestamp": "2025-03-29T11:56:49.804245",
+    "category": "dining"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 893.46,
+    "merchant": "Pharmeasy",
+    "location": "Pune",
+    "timestamp": "2025-01-28T04:58:12.787426",
+    "category": "healthcare"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 1457.81,
+    "merchant": "Croma",
+    "location": "Delhi",
+    "timestamp": "2025-03-04T17:23:42.362144",
+    "category": "electronics"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 4651.64,
+    "merchant": "Domino's",
+    "location": "Kolkata",
+    "timestamp": "2025-01-21T10:02:20.951607",
+    "category": "dining"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 1038.7,
+    "merchant": "FirstCry",
+    "location": "Pune",
+    "timestamp": "2024-10-18T10:01:19.827785",
+    "category": "shopping"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 4581.78,
+    "merchant": "INOX",
+    "location": "Pune",
+    "timestamp": "2024-10-20T20:55:15.281660",
+    "category": "entertainment"
+  },
+  {
+    "user_id": "susan.santiago@example.com",
+    "amount": 5208.25,
+    "merchant": "Amazon Fresh",
+    "location": "Bangalore",
+    "timestamp": "2024-12-18T05:06:56.102785",
+    "category": "groceries"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 4286.82,
+    "merchant": "Byju's",
+    "location": "Kolkata",
+    "timestamp": "2024-10-21T09:12:52.226741",
+    "category": "education"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 8325.69,
+    "merchant": "Goibibo",
+    "location": "Bangalore",
+    "timestamp": "2024-08-16T23:56:54.082087",
+    "category": "travel"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 4679.93,
+    "merchant": "Coursera",
+    "location": "Mumbai",
+    "timestamp": "2025-04-17T08:21:54.194866",
+    "category": "education"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 6875.06,
+    "merchant": "Paytm Money",
+    "location": "Mumbai",
+    "timestamp": "2025-04-20T00:11:56.630905",
+    "category": "investment"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 3051.93,
+    "merchant": "Uber Eats",
+    "location": "Mumbai",
+    "timestamp": "2025-07-16T07:26:53.247035",
+    "category": "dining"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 1772.77,
+    "merchant": "Booking.com",
+    "location": "Delhi",
+    "timestamp": "2025-03-31T16:25:46.661370",
+    "category": "travel"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 7985.77,
+    "merchant": "Paytm Money",
+    "location": "Hyderabad",
+    "timestamp": "2024-10-16T11:33:37.321355",
+    "category": "investment"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 7929.65,
+    "merchant": "Netflix",
+    "location": "Delhi",
+    "timestamp": "2025-07-05T11:45:51.632671",
+    "category": "entertainment"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 1970.06,
+    "merchant": "Max",
+    "location": "Mumbai",
+    "timestamp": "2025-03-09T10:58:47.128362",
+    "category": "healthcare"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 1877.59,
+    "merchant": "ICICI Direct",
+    "location": "Ahmedabad",
+    "timestamp": "2024-08-11T13:43:51.649570",
+    "category": "investment"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 7143.58,
+    "merchant": "Amazon",
+    "location": "Kolkata",
+    "timestamp": "2024-10-07T13:14:14.365127",
+    "category": "electronics"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 6311.45,
+    "merchant": "Byju's",
+    "location": "Ahmedabad",
+    "timestamp": "2024-10-08T13:44:52.952969",
+    "category": "education"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 2221.01,
+    "merchant": "INOX",
+    "location": "Kolkata",
+    "timestamp": "2024-08-18T12:14:33.113103",
+    "category": "entertainment"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 946.97,
+    "merchant": "Netflix",
+    "location": "Ahmedabad",
+    "timestamp": "2025-01-29T18:55:17.632285",
+    "category": "entertainment"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 9481.28,
+    "merchant": "Coursera",
+    "location": "Hyderabad",
+    "timestamp": "2025-01-11T15:00:03.635150",
+    "category": "education"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 8817.73,
+    "merchant": "Grofers",
+    "location": "Kolkata",
+    "timestamp": "2025-07-20T23:30:30.891006",
+    "category": "groceries"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 1901.03,
+    "merchant": "Vijay Sales",
+    "location": "Delhi",
+    "timestamp": "2024-12-26T14:36:13.684613",
+    "category": "electronics"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 7075.66,
+    "merchant": "Reliance Fresh",
+    "location": "Chennai",
+    "timestamp": "2024-10-27T18:02:19.310575",
+    "category": "groceries"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 7761.35,
+    "merchant": "Croma",
+    "location": "Pune",
+    "timestamp": "2024-09-21T22:44:11.620205",
+    "category": "electronics"
+  },
+  {
+    "user_id": "randy.williams@example.com",
+    "amount": 5930.7,
+    "merchant": "BSES",
+    "location": "Bangalore",
+    "timestamp": "2025-02-02T14:03:09.920090",
+    "category": "utilities"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 9867.15,
+    "merchant": "Uber Eats",
+    "location": "Bangalore",
+    "timestamp": "2025-05-31T02:41:37.621130",
+    "category": "dining"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 3602.4,
+    "merchant": "KFC",
+    "location": "Chennai",
+    "timestamp": "2024-11-21T13:33:01.517654",
+    "category": "dining"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 1834.28,
+    "merchant": "Tata Power",
+    "location": "Kolkata",
+    "timestamp": "2025-06-11T23:25:39.190505",
+    "category": "utilities"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 6107.44,
+    "merchant": "Croma",
+    "location": "Hyderabad",
+    "timestamp": "2024-12-07T05:26:11.108864",
+    "category": "electronics"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 8657.43,
+    "merchant": "Flipkart",
+    "location": "Ahmedabad",
+    "timestamp": "2024-07-27T22:49:04.698395",
+    "category": "shopping"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 5652.42,
+    "merchant": "BigBasket",
+    "location": "Hyderabad",
+    "timestamp": "2025-04-28T06:31:18.099079",
+    "category": "groceries"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 419.09,
+    "merchant": "Paytm Money",
+    "location": "Kolkata",
+    "timestamp": "2024-11-20T09:35:53.598312",
+    "category": "investment"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 410.24,
+    "merchant": "MTNL",
+    "location": "Mumbai",
+    "timestamp": "2025-02-21T10:01:24.713489",
+    "category": "utilities"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 6541.32,
+    "merchant": "Airtel",
+    "location": "Ahmedabad",
+    "timestamp": "2025-03-08T10:04:51.619540",
+    "category": "utilities"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 2133.67,
+    "merchant": "edX",
+    "location": "Bangalore",
+    "timestamp": "2025-03-08T18:08:50.566943",
+    "category": "education"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 9428.23,
+    "merchant": "Netmeds",
+    "location": "Chennai",
+    "timestamp": "2025-06-22T14:44:29.400869",
+    "category": "healthcare"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 9667.29,
+    "merchant": "Jio",
+    "location": "Bangalore",
+    "timestamp": "2024-09-20T05:52:36.600542",
+    "category": "utilities"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 4999.79,
+    "merchant": "Zomato",
+    "location": "Mumbai",
+    "timestamp": "2024-10-23T06:18:39.977925",
+    "category": "dining"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 4085.33,
+    "merchant": "Jio",
+    "location": "Chennai",
+    "timestamp": "2025-03-17T12:29:13.069545",
+    "category": "utilities"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 9891.71,
+    "merchant": "ICICI Direct",
+    "location": "Hyderabad",
+    "timestamp": "2025-04-03T19:55:57.944646",
+    "category": "investment"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 1349.8,
+    "merchant": "Udemy",
+    "location": "Ahmedabad",
+    "timestamp": "2024-12-09T12:10:46.121476",
+    "category": "education"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 9627.72,
+    "merchant": "Reliance Digital",
+    "location": "Kolkata",
+    "timestamp": "2024-08-25T08:30:33.408900",
+    "category": "electronics"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 7693.98,
+    "merchant": "Zerodha",
+    "location": "Mumbai",
+    "timestamp": "2025-03-03T07:16:00.300672",
+    "category": "investment"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 2316.59,
+    "merchant": "Nykaa",
+    "location": "Bangalore",
+    "timestamp": "2025-04-05T04:33:56.483960",
+    "category": "shopping"
+  },
+  {
+    "user_id": "patricia.johnson@example.com",
+    "amount": 8703.51,
+    "merchant": "Nykaa",
+    "location": "Kolkata",
+    "timestamp": "2025-03-16T11:14:55.197495",
+    "category": "shopping"
+  }
+]
