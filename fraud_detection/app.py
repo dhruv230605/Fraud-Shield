@@ -78,10 +78,16 @@ def transaction_to_text(txn):
         text_parts.append(f"amount_{txn['amount']}")
     if 'location' in txn:
         text_parts.append(f"location_{txn['location']}")
-    if 'time' in txn:
+    if 'timestamp' in txn:
+        text_parts.append(f"timestamp_{txn['timestamp']}")
+    elif 'time' in txn:
         text_parts.append(f"time_{txn['time']}")
     if 'user_id' in txn:
         text_parts.append(f"user_{txn['user_id']}")
+    if 'merchant' in txn:
+        text_parts.append(f"merchant_{txn['merchant']}")
+    if 'category' in txn:
+        text_parts.append(f"category_{txn['category']}")
     if 'frequency' in txn:
         text_parts.append(f"frequency_{txn['frequency']}")
     
@@ -91,7 +97,7 @@ def transaction_to_text(txn):
 def load_fraud_vectors():
     """Load known fraud vectors and build FAISS index"""
     try:
-        with open("fraud_detection/fraud_vectors.json") as f:
+        with open("/Users/dhruv/Documents/Internship/UC2/fraud_detection/fraud_vectors.json") as f:
             known_fraud_txns = json.load(f)
         
         fraud_vectors = []
@@ -139,10 +145,31 @@ def analyze_transaction_features(txn):
         if any(susp in location.lower() for susp in suspicious_locations):
             insights.append(f"Suspicious location: {location}")
     
-    if 'time' in txn:
-        time_str = str(txn['time'])
+    # Handle both timestamp and time fields
+    time_field = None
+    if 'timestamp' in txn:
+        time_field = txn['timestamp']
+    elif 'time' in txn:
+        time_field = txn['time']
+    
+    if time_field:
+        time_str = str(time_field)
         if '23:' in time_str or '00:' in time_str or '01:' in time_str:
             insights.append("Unusual transaction time (late night)")
+    
+    # Analyze merchant information
+    if 'merchant' in txn:
+        merchant = str(txn['merchant']).lower()
+        suspicious_merchants = ['unknown', 'offshore', 'unregistered']
+        if any(susp in merchant for susp in suspicious_merchants):
+            insights.append(f"Suspicious merchant: {txn['merchant']}")
+    
+    # Analyze category information
+    if 'category' in txn:
+        category = str(txn['category']).lower()
+        high_risk_categories = ['gambling', 'crypto', 'adult', 'illegal']
+        if any(risk in category for risk in high_risk_categories):
+            insights.append(f"High-risk category: {txn['category']}")
     
     if 'frequency' in txn:
         try:
@@ -154,7 +181,11 @@ def analyze_transaction_features(txn):
     
     # Check for missing critical information
     missing_fields = []
-    for field in ['amount', 'location', 'time', 'user_id']:
+    required_fields = ['amount', 'location', 'user_id']
+    if 'timestamp' not in txn and 'time' not in txn:
+        missing_fields.append('timestamp/time')
+    
+    for field in required_fields:
         if field not in txn or not txn[field]:
             missing_fields.append(field)
     
@@ -207,7 +238,7 @@ def main():
         index, fraud_meta, known_frauds = load_fraud_vectors()
     
     # Main content
-    tab1, tab2, tab3, tab4 = st.tabs(["📊 Upload & Analyze", "🤖 ML Models", "📈 Analytics", "⚙️ Settings"])
+    tab1, tab2, tab3 = st.tabs(["📊 Upload & Analyze", "🤖 ML Models", "📈 Analytics"])
     
     with tab1:
         st.header("Transaction Analysis")
@@ -324,9 +355,8 @@ def main():
             # Load training data
             if st.button("📊 Load Training Data"):
                 try:
-                    with open("data/large_financial_data.json", "r") as f:
-                        data = json.load(f)
-                        training_transactions = data.get('transactions', [])
+                    with open("transactions.json", "r") as f:
+                        training_transactions = json.load(f)
                     
                     st.session_state.training_transactions = training_transactions
                     st.success(f"Loaded {len(training_transactions)} transactions for training")
@@ -468,7 +498,7 @@ def main():
                             else:
                                 with st.expander(f"🤖 ML Normal - Transaction {i+1} (Probability: {prob:.3f})"):
                                     st.json(txn)
-                                    st.info(f"This transaction has a {prob:.1%} probability of being normal according to the {model_choice} model.")
+                                    st.info(f"This transaction has a {prob:.1%} probability of being fraudulent according to the {model_choice} model, which is below the threshold of {threshold:.1%}.")
                         
                     except Exception as e:
                         st.error(f"Error in ML analysis: {e}")
@@ -506,61 +536,40 @@ def main():
                     st.plotly_chart(fig, use_container_width=True)
                 
                 # Time analysis
-                if 'time' in fraud_df.columns:
+                time_column = None
+                if 'timestamp' in fraud_df.columns:
+                    time_column = 'timestamp'
+                elif 'time' in fraud_df.columns:
+                    time_column = 'time'
+                
+                if time_column:
                     st.subheader("Fraud by Time")
                     try:
-                        fraud_df['hour'] = pd.to_datetime(fraud_df['time']).dt.hour
+                        fraud_df['hour'] = pd.to_datetime(fraud_df[time_column]).dt.hour
                         hour_counts = fraud_df['hour'].value_counts().sort_index()
                         fig = px.line(x=hour_counts.index, y=hour_counts.values, 
                                     title="Fraud Cases by Hour of Day")
                         st.plotly_chart(fig, use_container_width=True)
                     except:
                         st.info("Could not analyze time patterns")
+                
+                # Merchant analysis
+                if 'merchant' in fraud_df.columns:
+                    st.subheader("Fraud by Merchant")
+                    merchant_counts = fraud_df['merchant'].value_counts().head(10)
+                    fig = px.bar(x=merchant_counts.index, y=merchant_counts.values, 
+                               title="Top 10 Fraudulent Merchants")
+                    st.plotly_chart(fig, use_container_width=True)
+                
+                # Category analysis
+                if 'category' in fraud_df.columns:
+                    st.subheader("Fraud by Category")
+                    category_counts = fraud_df['category'].value_counts()
+                    fig = px.pie(values=category_counts.values, names=category_counts.index, 
+                               title="Fraud Distribution by Category")
+                    st.plotly_chart(fig, use_container_width=True)
         else:
             st.info("No fraud data available for analytics. Upload some fraud cases first.")
-    
-    with tab3:
-        st.header("System Settings")
-        
-        st.subheader("Current Configuration")
-        st.write(f"**Fraud Detection Threshold:** {threshold}")
-        st.write(f"**Known Fraud Patterns:** {len(known_frauds)}")
-        
-        # Export/Import fraud database
-        st.subheader("Fraud Database Management")
-        
-        col1, col2 = st.columns(2)
-        
-        with col1:
-            if st.button("📥 Export Fraud Database"):
-                try:
-                    with open("fraud_detection/fraud_vectors.json", "r") as f:
-                        fraud_data = json.load(f)
-                    st.download_button(
-                        label="Download fraud_vectors.json",
-                        data=json.dumps(fraud_data, indent=2),
-                        file_name="fraud_vectors_export.json",
-                        mime="application/json"
-                    )
-                except Exception as e:
-                    st.error(f"Error exporting database: {e}")
-        
-        with col2:
-            uploaded_fraud_db = st.file_uploader(
-                "Import Fraud Database",
-                type=['json'],
-                help="Upload a JSON file to replace the current fraud database"
-            )
-            
-            if uploaded_fraud_db and st.button("Import"):
-                try:
-                    new_fraud_data = json.load(uploaded_fraud_db)
-                    with open("fraud_detection/fraud_vectors.json", "w") as f:
-                        json.dump(new_fraud_data, f, indent=2)
-                    st.success("Fraud database updated successfully!")
-                    st.rerun()
-                except Exception as e:
-                    st.error(f"Error importing database: {e}")
 
 if __name__ == "__main__":
     main() 

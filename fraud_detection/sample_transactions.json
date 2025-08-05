@@ -1,0 +1,74 @@
+[
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 1824.42,
+    "merchant": "Udemy",
+    "location": "Bangalore",
+    "timestamp": "2025-02-12T23:17:32.981035",
+    "category": "education"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 9988.0,
+    "merchant": "Ajio",
+    "location": "Bangalore",
+    "timestamp": "2025-04-26T12:40:29.740355",
+    "category": "shopping"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 633.58,
+    "merchant": "Udemy",
+    "location": "Pune",
+    "timestamp": "2025-01-31T04:27:20.087872",
+    "category": "education"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 438.32,
+    "merchant": "Pharmeasy",
+    "location": "Pune",
+    "timestamp": "2024-08-20T13:04:28.610543",
+    "category": "healthcare"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 6383.8,
+    "merchant": "edX",
+    "location": "Ahmedabad",
+    "timestamp": "2024-12-31T04:54:39.642406",
+    "category": "education"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 8718.22,
+    "merchant": "HDFC Securities",
+    "location": "Bangalore",
+    "timestamp": "2024-10-28T13:34:18.067820",
+    "category": "investment"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 6239.61,
+    "merchant": "IRCTC",
+    "location": "Hyderabad",
+    "timestamp": "2025-03-14T00:14:50.693357",
+    "category": "travel"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 6854.34,
+    "merchant": "D-Mart",
+    "location": "Mumbai",
+    "timestamp": "2024-11-18T22:48:56.963292",
+    "category": "groceries"
+  },
+  {
+    "user_id": "barbara.smith@example.com",
+    "amount": 9746.92,
+    "merchant": "Uber Eats",
+    "location": "Chennai",
+    "timestamp": "2024-12-19T07:21:49.683666",
+    "category": "dining"
+  }
+] 

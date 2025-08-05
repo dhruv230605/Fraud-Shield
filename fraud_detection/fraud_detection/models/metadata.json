@@ -1,0 +1,59 @@
+{
+  "feature_names": [
+    "amount",
+    "amount_log",
+    "hour",
+    "day_of_week",
+    "month",
+    "is_weekend",
+    "is_night",
+    "city_encoded",
+    "country_encoded",
+    "distance_from_home",
+    "is_cash",
+    "is_card",
+    "is_upi",
+    "is_online",
+    "is_shopping",
+    "is_entertainment",
+    "is_education",
+    "is_food",
+    "is_transport",
+    "merchant_encoded",
+    "is_recurring",
+    "is_monthly",
+    "is_weekly",
+    "has_urgent_tag",
+    "has_business_tag",
+    "has_personal_tag",
+    "has_gift_tag",
+    "num_tags",
+    "loyalty_points",
+    "has_invoice",
+    "num_items",
+    "avg_item_price",
+    "max_item_price",
+    "is_usd",
+    "is_eur",
+    "is_inr",
+    "user_encoded"
+  ],
+  "model_performance": {
+    "random_forest": {
+      "accuracy": 0.7,
+      "auc": 0.6200000000000001
+    },
+    "logistic_regression": {
+      "accuracy": 0.7,
+      "auc": 0.7233333333333334
+    },
+    "svm": {
+      "accuracy": 0.675,
+      "auc": 0.46333333333333343
+    },
+    "isolation_forest": {
+      "accuracy": 0.65,
+      "auc": 0.4666666666666667
+    }
+  }
+}
