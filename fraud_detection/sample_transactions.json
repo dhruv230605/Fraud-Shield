@@ -5,7 +5,23 @@
     "merchant": "Udemy",
     "location": "Bangalore",
     "timestamp": "2025-02-12T23:17:32.981035",
-    "category": "education"
+    "category": "education",
+    "payment_method": "online",
+    "currency": "INR",
+    "tags": ["education", "online_course"],
+    "metadata": {
+      "loyalty_points_earned": 18,
+      "invoice_details": {
+        "invoice_number": "INV-2025-001",
+        "tax_amount": 182.44
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Python Programming Course",
+          "price": 1824.42
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -13,7 +29,27 @@
     "merchant": "Ajio",
     "location": "Bangalore",
     "timestamp": "2025-04-26T12:40:29.740355",
-    "category": "shopping"
+    "category": "shopping",
+    "payment_method": "card",
+    "currency": "INR",
+    "tags": ["shopping", "fashion"],
+    "metadata": {
+      "loyalty_points_earned": 99,
+      "invoice_details": {
+        "invoice_number": "INV-2025-002",
+        "tax_amount": 998.80
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Designer Dress",
+          "price": 7500.0
+        },
+        {
+          "item": "Shoes",
+          "price": 2488.0
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -21,7 +57,23 @@
     "merchant": "Udemy",
     "location": "Pune",
     "timestamp": "2025-01-31T04:27:20.087872",
-    "category": "education"
+    "category": "education",
+    "payment_method": "online",
+    "currency": "INR",
+    "tags": ["education", "night_transaction"],
+    "metadata": {
+      "loyalty_points_earned": 6,
+      "invoice_details": {
+        "invoice_number": "INV-2025-003",
+        "tax_amount": 63.36
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Data Science Course",
+          "price": 633.58
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -29,7 +81,23 @@
     "merchant": "Pharmeasy",
     "location": "Pune",
     "timestamp": "2024-08-20T13:04:28.610543",
-    "category": "healthcare"
+    "category": "healthcare",
+    "payment_method": "upi",
+    "currency": "INR",
+    "tags": ["healthcare", "medicine"],
+    "metadata": {
+      "loyalty_points_earned": 4,
+      "invoice_details": {
+        "invoice_number": "INV-2024-001",
+        "tax_amount": 43.83
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Prescription Medicine",
+          "price": 438.32
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -37,7 +105,23 @@
     "merchant": "edX",
     "location": "Ahmedabad",
     "timestamp": "2024-12-31T04:54:39.642406",
-    "category": "education"
+    "category": "education",
+    "payment_method": "online",
+    "currency": "USD",
+    "tags": ["education", "international"],
+    "metadata": {
+      "loyalty_points_earned": 63,
+      "invoice_details": {
+        "invoice_number": "INV-2024-002",
+        "tax_amount": 638.38
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Machine Learning Course",
+          "price": 6383.8
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -45,7 +129,23 @@
     "merchant": "HDFC Securities",
     "location": "Bangalore",
     "timestamp": "2024-10-28T13:34:18.067820",
-    "category": "investment"
+    "category": "investment",
+    "payment_method": "online",
+    "currency": "INR",
+    "tags": ["investment", "business"],
+    "metadata": {
+      "loyalty_points_earned": 87,
+      "invoice_details": {
+        "invoice_number": "INV-2024-003",
+        "tax_amount": 871.82
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Stock Purchase",
+          "price": 8718.22
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -53,7 +153,23 @@
     "merchant": "IRCTC",
     "location": "Hyderabad",
     "timestamp": "2025-03-14T00:14:50.693357",
-    "category": "travel"
+    "category": "travel",
+    "payment_method": "card",
+    "currency": "INR",
+    "tags": ["travel", "night_transaction"],
+    "metadata": {
+      "loyalty_points_earned": 62,
+      "invoice_details": {
+        "invoice_number": "INV-2025-004",
+        "tax_amount": 623.96
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Train Ticket - AC 2 Tier",
+          "price": 6239.61
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -61,7 +177,23 @@
     "merchant": "D-Mart",
     "location": "Mumbai",
     "timestamp": "2024-11-18T22:48:56.963292",
-    "category": "groceries"
+    "category": "groceries",
+    "payment_method": "cash",
+    "currency": "INR",
+    "tags": ["groceries", "night_transaction"],
+    "metadata": {
+      "loyalty_points_earned": 68,
+      "invoice_details": {
+        "invoice_number": "INV-2024-004",
+        "tax_amount": 685.43
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Groceries - Monthly",
+          "price": 6854.34
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -69,6 +201,22 @@
     "merchant": "Uber Eats",
     "location": "Chennai",
     "timestamp": "2024-12-19T07:21:49.683666",
-    "category": "dining"
+    "category": "dining",
+    "payment_method": "upi",
+    "currency": "INR",
+    "tags": ["dining", "food_delivery"],
+    "metadata": {
+      "loyalty_points_earned": 97,
+      "invoice_details": {
+        "invoice_number": "INV-2024-005",
+        "tax_amount": 974.69
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Restaurant Order",
+          "price": 9746.92
+        }
+      ]
+    }
   }
 ] 

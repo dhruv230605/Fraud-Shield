@@ -40,20 +40,20 @@
   ],
   "model_performance": {
     "random_forest": {
-      "accuracy": 0.7,
-      "auc": 0.6200000000000001
+      "accuracy": 0.5,
+      "auc": NaN
     },
     "logistic_regression": {
-      "accuracy": 0.7,
-      "auc": 0.7233333333333334
+      "accuracy": 1.0,
+      "auc": NaN
     },
     "svm": {
-      "accuracy": 0.675,
-      "auc": 0.46333333333333343
+      "accuracy": 1.0,
+      "auc": NaN
     },
     "isolation_forest": {
-      "accuracy": 0.65,
-      "auc": 0.4666666666666667
+      "accuracy": 1.0,
+      "auc": NaN
     }
   }
 }

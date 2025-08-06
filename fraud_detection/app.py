@@ -355,7 +355,7 @@ def main():
             # Load training data
             if st.button("📊 Load Training Data"):
                 try:
-                    with open("transactions.json", "r") as f:
+                    with open("sample_transactions.json", "r") as f:
                         training_transactions = json.load(f)
                     
                     st.session_state.training_transactions = training_transactions

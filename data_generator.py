@@ -40,6 +40,59 @@ def generate_transaction(user_id, start_date, end_date):
     amount = round(random.uniform(100, 10000), 2)
     timestamp = fake.date_time_between(start_date=start_date, end_date=end_date)
     
+    # Generate appropriate tags based on category
+    category_tags = {
+        "dining": ["dining", "food_delivery", "restaurant"],
+        "groceries": ["groceries", "household", "essentials"],
+        "electronics": ["electronics", "tech", "gadgets"],
+        "travel": ["travel", "transportation", "booking"],
+        "entertainment": ["entertainment", "leisure", "streaming"],
+        "utilities": ["utilities", "bills", "services"],
+        "healthcare": ["healthcare", "medicine", "medical"],
+        "education": ["education", "online_course", "learning"],
+        "investment": ["investment", "business", "financial"],
+        "shopping": ["shopping", "fashion", "retail"]
+    }
+    
+    # Add some additional tags
+    additional_tags = ["personal", "business", "recurring", "urgent", "gift", "night_transaction", "international"]
+    all_tags = category_tags.get(category, []) + random.sample(additional_tags, k=random.randint(0, 2))
+    
+    # Generate itemized breakdown
+    num_items = random.randint(1, 3)
+    itemized_breakdown = []
+    remaining_amount = amount
+    
+    for i in range(num_items):
+        if i == num_items - 1:  # Last item gets remaining amount
+            item_price = remaining_amount
+        else:
+            item_price = round(remaining_amount / (num_items - i), 2)
+            remaining_amount -= item_price
+        
+        item_names = {
+            "dining": ["Restaurant Order", "Food Delivery", "Coffee", "Dinner", "Lunch"],
+            "groceries": ["Groceries - Monthly", "Fresh Vegetables", "Dairy Products", "Household Items"],
+            "electronics": ["Smartphone", "Laptop", "Headphones", "Camera", "Tablet"],
+            "travel": ["Train Ticket - AC 2 Tier", "Flight Ticket", "Hotel Booking", "Car Rental"],
+            "entertainment": ["Movie Ticket", "Streaming Subscription", "Concert Ticket", "Game"],
+            "utilities": ["Electricity Bill", "Internet Bill", "Mobile Bill", "Water Bill"],
+            "healthcare": ["Prescription Medicine", "Doctor Consultation", "Medical Test", "Health Checkup"],
+            "education": ["Python Programming Course", "Data Science Course", "Machine Learning Course", "Web Development"],
+            "investment": ["Stock Purchase", "Mutual Fund", "Bond Investment", "ETF"],
+            "shopping": ["Designer Dress", "Shoes", "Handbag", "Watch", "Jewelry"]
+        }
+        
+        item_name = random.choice(item_names.get(category, [f"Item {chr(65 + i)}"]))
+        itemized_breakdown.append({
+            "item": item_name,
+            "price": item_price
+        })
+    
+    # Generate invoice details
+    tax_amount = round(amount * 0.1, 2)  # 10% tax
+    invoice_number = f"INV-{random.randint(1000, 9999)}"
+    
     return {
         "transaction_id": str(uuid.uuid4()),
         "user_id": user_id,
@@ -47,31 +100,21 @@ def generate_transaction(user_id, start_date, end_date):
         "amount": amount,
         "currency": random.choice(CURRENCIES),
         "category": category,
-        "merchant_name": merchant,
+        "merchant": merchant,  # Use merchant instead of merchant_name
         "payment_method": random.choice(PAYMENT_METHODS),
-        "location": {
-            "geocoordinates": [
-                round(random.uniform(8.0, 37.0), 6),  # Latitude for India
-                round(random.uniform(68.0, 97.0), 6)   # Longitude for India
-            ],
-            "city": random.choice(CITIES),
-            "country": "India"
-        },
-        "tags": random.sample(["personal", "business", "recurring", "urgent", "gift"], k=random.randint(0, 3)),
+        "location": random.choice(CITIES),  # Simplified to string format
+        "tags": all_tags,
         "recurrence": {
             "is_recurring": random.random() < 0.2,
             "frequency": random.choice(["daily", "weekly", "monthly", "yearly"]) if random.random() < 0.2 else ""
         },
         "metadata": {
-            "invoice_details": f"INV-{random.randint(1000, 9999)}",
-            "itemized_breakdown": [
-                {
-                    "product": f"Item {chr(65 + i)}",
-                    "quantity": random.randint(1, 5),
-                    "price": round(amount / (i + 1), 2)
-                } for i in range(random.randint(1, 3))
-            ],
-            "loyalty_points_earned": random.randint(10, 100)
+            "loyalty_points_earned": random.randint(10, 100),
+            "invoice_details": {
+                "invoice_number": invoice_number,
+                "tax_amount": tax_amount
+            },
+            "itemized_breakdown": itemized_breakdown
         },
         "keywords": ["transaction", "finance", "payment"],
         "created_at": timestamp.isoformat(),
@@ -286,14 +329,15 @@ if __name__ == "__main__":
         json.dump(dataset["users"], f, indent=2)
 
     # Save transactions in the format required by fraud_detection/transactions.json
-    # Convert merchant_name to merchant, and location to city string
+    # The transactions are already in the correct format, just save them directly
     transactions_for_fraud = []
     for txn in dataset["transactions"]:
+        # Create simplified version for fraud detection (basic fields)
         transactions_for_fraud.append({
             "user_id": txn["user_id"],
             "amount": txn["amount"],
-            "merchant": txn["merchant_name"],
-            "location": txn["location"]["city"] if isinstance(txn["location"], dict) else txn["location"],
+            "merchant": txn["merchant"],
+            "location": txn["location"],
             "timestamp": txn["timestamp"],
             "category": txn["category"]
         })
@@ -303,9 +347,37 @@ if __name__ == "__main__":
     # Generate fraud_vectors.json using a simple rule-based approach
     major_cities = ["Mumbai", "Delhi", "Bangalore", "Hyderabad", "Chennai", "Kolkata", "Pune", "Ahmedabad"]
     fraud_vectors = []
-    for txn in transactions_for_fraud:
-        if txn["amount"] > 5000 or txn["location"] not in major_cities:
-            fraud_vectors.append(txn)
+    for txn in dataset["transactions"]:  # Use full transaction data for fraud vectors
+        # Create fraud vector with enhanced data
+        fraud_vector = {
+            "user_id": txn["user_id"],
+            "amount": txn["amount"],
+            "merchant": txn["merchant"],
+            "location": txn["location"],
+            "timestamp": txn["timestamp"],
+            "category": txn["category"],
+            "payment_method": txn["payment_method"],
+            "currency": txn["currency"],
+            "tags": txn["tags"],
+            "metadata": txn["metadata"]
+        }
+        
+        # Apply fraud detection rules
+        is_fraud = False
+        if txn["amount"] > 5000:
+            is_fraud = True
+        elif txn["location"] not in major_cities:
+            is_fraud = True
+        elif "night_transaction" in txn["tags"] and txn["amount"] > 1000:
+            is_fraud = True
+        elif txn["payment_method"] == "cash" and txn["amount"] > 2000:
+            is_fraud = True
+        elif "international" in txn["tags"] and txn["amount"] > 3000:
+            is_fraud = True
+        
+        if is_fraud:
+            fraud_vectors.append(fraud_vector)
+    
     with open("fraud_detection/fraud_vectors.json", "w") as f:
         json.dump(fraud_vectors, f, indent=2)
 

@@ -49,31 +49,37 @@ class FraudDetectionML:
                     feature_dict['is_weekend'] = 0
                     feature_dict['is_night'] = 0
             
-            # Location features
-            if 'location' in txn and isinstance(txn['location'], dict):
-                location = txn['location']
-                feature_dict['city_encoded'] = hash(location.get('city', '')) % 1000
-                feature_dict['country_encoded'] = hash(location.get('country', '')) % 100
-                
-                # Distance from home (assuming Bangalore as home)
-                if 'geocoordinates' in location:
-                    coords = location['geocoordinates']
-                    if len(coords) == 2:
-                        # Simple distance calculation (you can use haversine for accuracy)
-                        home_coords = [12.9716, 77.5946]  # Bangalore
-                        distance = np.sqrt((coords[0] - home_coords[0])**2 + (coords[1] - home_coords[1])**2)
-                        feature_dict['distance_from_home'] = distance
+            # Location features - handle both string and dict formats
+            if 'location' in txn:
+                if isinstance(txn['location'], dict):
+                    location = txn['location']
+                    feature_dict['city_encoded'] = hash(location.get('city', '')) % 1000
+                    feature_dict['country_encoded'] = hash(location.get('country', '')) % 100
+                    
+                    # Distance from home (assuming Bangalore as home)
+                    if 'geocoordinates' in location:
+                        coords = location['geocoordinates']
+                        if len(coords) == 2:
+                            home_coords = [12.9716, 77.5946]  # Bangalore
+                            distance = np.sqrt((coords[0] - home_coords[0])**2 + (coords[1] - home_coords[1])**2)
+                            feature_dict['distance_from_home'] = distance
+                        else:
+                            feature_dict['distance_from_home'] = 0
                     else:
                         feature_dict['distance_from_home'] = 0
                 else:
-                    feature_dict['distance_from_home'] = 0
+                    # Handle string location (like "Bangalore")
+                    location_str = str(txn['location'])
+                    feature_dict['city_encoded'] = hash(location_str) % 1000
+                    feature_dict['country_encoded'] = 0  # Default for string locations
+                    feature_dict['distance_from_home'] = 0  # Default for string locations
             else:
                 feature_dict['city_encoded'] = 0
                 feature_dict['country_encoded'] = 0
                 feature_dict['distance_from_home'] = 0
             
-            # Payment method features
-            payment_method = txn.get('payment_method', '').lower()
+            # Payment method features (default to online for missing data)
+            payment_method = txn.get('payment_method', 'online').lower()
             feature_dict['is_cash'] = 1 if 'cash' in payment_method else 0
             feature_dict['is_card'] = 1 if 'card' in payment_method else 0
             feature_dict['is_upi'] = 1 if 'upi' in payment_method else 0
@@ -86,12 +92,17 @@ class FraudDetectionML:
             feature_dict['is_education'] = 1 if 'education' in category else 0
             feature_dict['is_food'] = 1 if 'food' in category else 0
             feature_dict['is_transport'] = 1 if 'transport' in category else 0
+            feature_dict['is_healthcare'] = 1 if 'healthcare' in category else 0
+            feature_dict['is_investment'] = 1 if 'investment' in category else 0
+            feature_dict['is_travel'] = 1 if 'travel' in category else 0
+            feature_dict['is_groceries'] = 1 if 'groceries' in category else 0
+            feature_dict['is_dining'] = 1 if 'dining' in category else 0
             
-            # Merchant features
-            merchant = txn.get('merchant_name', '').lower()
+            # Merchant features - handle both merchant and merchant_name fields
+            merchant = txn.get('merchant', txn.get('merchant_name', '')).lower()
             feature_dict['merchant_encoded'] = hash(merchant) % 1000
             
-            # Recurrence features
+            # Recurrence features (default to non-recurring for missing data)
             if 'recurrence' in txn:
                 recurrence = txn['recurrence']
                 feature_dict['is_recurring'] = 1 if recurrence.get('is_recurring', False) else 0
@@ -103,7 +114,7 @@ class FraudDetectionML:
                 feature_dict['is_monthly'] = 0
                 feature_dict['is_weekly'] = 0
             
-            # Tags features
+            # Tags features (default to empty list for missing data)
             tags = txn.get('tags', [])
             feature_dict['has_urgent_tag'] = 1 if 'urgent' in tags else 0
             feature_dict['has_business_tag'] = 1 if 'business' in tags else 0
@@ -111,7 +122,7 @@ class FraudDetectionML:
             feature_dict['has_gift_tag'] = 1 if 'gift' in tags else 0
             feature_dict['num_tags'] = len(tags)
             
-            # Metadata features
+            # Metadata features (default to zeros for missing data)
             if 'metadata' in txn:
                 metadata = txn['metadata']
                 feature_dict['loyalty_points'] = metadata.get('loyalty_points_earned', 0)
@@ -134,13 +145,13 @@ class FraudDetectionML:
                 feature_dict['avg_item_price'] = 0
                 feature_dict['max_item_price'] = 0
             
-            # Currency features
-            currency = txn.get('currency', '').upper()
+            # Currency features (default to INR for missing data)
+            currency = txn.get('currency', 'INR').upper()
             feature_dict['is_usd'] = 1 if currency == 'USD' else 0
             feature_dict['is_eur'] = 1 if currency == 'EUR' else 0
             feature_dict['is_inr'] = 1 if currency == 'INR' else 0
             
-            # User behavior features (placeholder - would need user history)
+            # User behavior features
             feature_dict['user_encoded'] = hash(txn.get('user_id', '')) % 1000
             
             features.append(feature_dict)
