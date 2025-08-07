@@ -3194,5 +3194,197 @@
         }
       ]
     }
+  },
+  {
+    "user_id": "fraud.user@example.com",
+    "amount": 25000.00,
+    "merchant": "Offshore Casino",
+    "location": "Cayman Islands",
+    "timestamp": "2025-01-15T23:45:00.000000",
+    "category": "gambling",
+    "payment_method": "online",
+    "currency": "USD",
+    "tags": ["urgent", "business"],
+    "metadata": {
+      "loyalty_points_earned": 0,
+      "invoice_details": {
+        "invoice_number": "INV-2025-003",
+        "tax_amount": 0.00
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Casino Credits",
+          "price": 25000.00
+        }
+      ]
+    }
+  },
+  {
+    "user_id": "suspicious.user@example.com",
+    "amount": 0.01,
+    "merchant": "Test Merchant",
+    "location": "Unknown",
+    "timestamp": "2025-01-16T01:30:00.000000",
+    "category": "testing",
+    "payment_method": "card",
+    "currency": "INR",
+    "tags": ["test", "suspicious"],
+    "metadata": {
+      "loyalty_points_earned": 0,
+      "invoice_details": {
+        "invoice_number": "INV-2025-005",
+        "tax_amount": 0.00
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Test Transaction",
+          "price": 0.01
+        }
+      ]
+    }
+  },
+  {
+    "user_id": "crypto.user@example.com",
+    "amount": 50000.00,
+    "merchant": "Crypto Exchange",
+    "location": "Singapore",
+    "timestamp": "2025-01-16T22:00:00.000000",
+    "category": "crypto",
+    "payment_method": "online",
+    "currency": "USD",
+    "tags": ["crypto", "investment"],
+    "metadata": {
+      "loyalty_points_earned": 0,
+      "invoice_details": {
+        "invoice_number": "INV-2025-009",
+        "tax_amount": 0.00
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Bitcoin Purchase",
+          "price": 50000.00
+        }
+      ]
+    }
+  },
+  {
+    "user_id": "suspicious.location@example.com",
+    "amount": 15000.00,
+    "merchant": "Offshore Bank",
+    "location": "Tax Haven",
+    "timestamp": "2025-01-18T12:00:00.000000",
+    "category": "banking",
+    "payment_method": "online",
+    "currency": "USD",
+    "tags": ["banking", "offshore"],
+    "metadata": {
+      "loyalty_points_earned": 0,
+      "invoice_details": {
+        "invoice_number": "INV-2025-018",
+        "tax_amount": 0.00
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Bank Transfer",
+          "price": 15000.00
+        }
+      ]
+    }
+  },
+  {
+    "user_id": "unknown.merchant@example.com",
+    "amount": 5000.00,
+    "merchant": "Unknown Merchant",
+    "location": "Unknown Location",
+    "timestamp": "2025-01-18T23:30:00.000000",
+    "category": "unknown",
+    "payment_method": "online",
+    "currency": "INR",
+    "tags": ["unknown", "suspicious"],
+    "metadata": {
+      "loyalty_points_earned": 0,
+      "invoice_details": {
+        "invoice_number": "INV-2025-019",
+        "tax_amount": 0.00
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Unknown Service",
+          "price": 5000.00
+        }
+      ]
+    }
+  },
+  {
+    "user_id": "cash.high.amount@example.com",
+    "amount": 20000.00,
+    "merchant": "Jewelry Store",
+    "location": "Mumbai",
+    "timestamp": "2025-01-20T11:00:00.000000",
+    "category": "shopping",
+    "payment_method": "cash",
+    "currency": "INR",
+    "tags": ["jewelry", "cash"],
+    "metadata": {
+      "loyalty_points_earned": 0,
+      "invoice_details": {
+        "invoice_number": "INV-2025-026",
+        "tax_amount": 2000.00
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Gold Ring",
+          "price": 20000.00
+        }
+      ]
+    }
+  },
+  {
+    "user_id": "night.user@example.com",
+    "amount": 8000.00,
+    "merchant": "24/7 Gas Station",
+    "location": "Chennai",
+    "timestamp": "2025-01-16T03:15:00.000000",
+    "category": "transport",
+    "payment_method": "cash",
+    "currency": "INR",
+    "tags": ["night", "urgent"],
+    "metadata": {
+      "loyalty_points_earned": 8,
+      "invoice_details": {
+        "invoice_number": "INV-2025-007",
+        "tax_amount": 800.00
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Fuel",
+          "price": 8000.00
+        }
+      ]
+    }
+  },
+  {
+    "user_id": "john.doe@example.com",
+    "amount": 15000.00,
+    "merchant": "Luxury Watch Store",
+    "location": "Mumbai",
+    "timestamp": "2025-01-15T02:30:00.000000",
+    "category": "shopping",
+    "payment_method": "card",
+    "currency": "INR",
+    "tags": ["luxury", "high_value"],
+    "metadata": {
+      "loyalty_points_earned": 150,
+      "invoice_details": {
+        "invoice_number": "INV-2025-001",
+        "tax_amount": 1500.00
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Swiss Luxury Watch",
+          "price": 15000.00
+        }
+      ]
+    }
   }
 ]

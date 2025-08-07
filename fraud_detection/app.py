@@ -391,23 +391,6 @@ def main():
             ])
             
             st.dataframe(performance_df, use_container_width=True)
-            
-            # Performance visualization
-            fig = go.Figure()
-            
-            models = list(st.session_state.model_performance.keys())
-            accuracies = [st.session_state.model_performance[m]['accuracy'] for m in models]
-            
-            fig.add_trace(go.Bar(name='Accuracy', x=models, y=accuracies, marker_color='lightblue'))
-            
-            fig.update_layout(
-                title="Model Performance Comparison",
-                xaxis_title="Models",
-                yaxis_title="Score",
-                barmode='group'
-            )
-            
-            st.plotly_chart(fig, use_container_width=True)
         
         # Feature importance
         if hasattr(ml_system, 'models') and ml_system.models:
