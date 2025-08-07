@@ -17,8 +17,8 @@ load_dotenv(dotenv_path="/Users/dhruv/Documents/Internship/UC2/.env")
 
 # Page configuration
 st.set_page_config(
-    page_title="Fraud Detection System",
-    page_icon="🕵️",
+    page_title="FraudShield - AI Fraud Detection",
+    page_icon="🛡️",
     layout="wide"
 )
 
@@ -48,6 +48,72 @@ st.markdown("""
         padding: 1rem;
         border-radius: 0.5rem;
         border: 1px solid #dee2e6;
+    }
+    .analytics-header {
+        font-size: 2.5rem;
+        color: #2c3e50;
+        margin-bottom: 1.5rem;
+    }
+    .analytics-subheader {
+        font-size: 1.8rem;
+        color: #34495e;
+        margin-bottom: 1rem;
+        font-weight: bold;
+    }
+    .analytics-text {
+        font-size: 1.2rem;
+        line-height: 1.6;
+    }
+    .chart-title {
+        font-size: 1.5rem !important;
+        font-weight: bold !important;
+    }
+    .chart-label {
+        font-size: 1.1rem !important;
+    }
+    .chart-tick {
+        font-size: 1rem !important;
+    }
+    .stTabs [data-baseweb="tab-list"] {
+        gap: 8px;
+    }
+    .stTabs [data-baseweb="tab"] {
+        height: 60px;
+        white-space: pre-wrap;
+        background-color: #f0f2f6;
+        border-radius: 8px 8px 0px 0px;
+        gap: 1rem;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .stTabs [aria-selected="true"] {
+        background-color: #1f77b4 !important;
+        color: white !important;
+        font-size: 1.4rem !important;
+        font-weight: bold !important;
+    }
+    .stTabs [aria-selected="false"] {
+        background-color: #f0f2f6 !important;
+        color: #333 !important;
+        font-size: 1.3rem !important;
+    }
+    .stTabs [data-baseweb="tab"] {
+        font-size: 1.4rem !important;
+        font-weight: bold !important;
+    }
+    .stTabs [data-baseweb="tab-list"] [data-baseweb="tab"] {
+        font-size: 1.4rem !important;
+        font-weight: bold !important;
+    }
+    .stTabs [data-baseweb="tab-list"] [data-baseweb="tab"] span {
+        font-size: 1.4rem !important;
+        font-weight: bold !important;
+    }
+    .stTabs [data-baseweb="tab-list"] [data-baseweb="tab"] div {
+        font-size: 1.4rem !important;
+        font-weight: bold !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -311,7 +377,8 @@ def analyze_ml_concerns(txn, probability, threshold, model_name):
 
 def main():
     # Header
-    st.markdown('<h1 class="main-header">🕵️ Fraud Detection System</h1>', unsafe_allow_html=True)
+    st.markdown('<h1 class="main-header">🛡️ FraudShield</h1>', unsafe_allow_html=True)
+    st.markdown('<h2 style="text-align: center; color: #999; font-size: 1.5rem; margin-top: -1rem; margin-bottom: 2rem;">Advanced Fraud Detection & Analytics Platform</h2>', unsafe_allow_html=True)
     
     # Load fraud vectors
     with st.spinner("Loading fraud detection system..."):
@@ -573,11 +640,11 @@ def main():
             st.info("Please upload transactions and train models first")
     
     with tab3:
-        st.header("Analytics Dashboard")
+        st.markdown('<h1 class="analytics-header">📈 Analytics Dashboard</h1>', unsafe_allow_html=True)
         
         if index is not None and fraud_meta:
             # Fraud patterns analysis
-            st.subheader("Known Fraud Patterns")
+            st.markdown('<h2 class="analytics-subheader">🔍 Known Fraud Patterns</h2>', unsafe_allow_html=True)
             
             # Convert fraud data to DataFrame for analysis
             fraud_df = pd.DataFrame(fraud_meta)
@@ -585,10 +652,19 @@ def main():
             if not fraud_df.empty:
                 # Location analysis
                 if 'location' in fraud_df.columns:
-                    st.subheader("Fraud by Location")
+                    st.markdown('<h3 class="analytics-subheader">📍 Fraud by Location</h3>', unsafe_allow_html=True)
                     location_counts = fraud_df['location'].value_counts()
                     fig = px.bar(x=location_counts.index, y=location_counts.values, 
                                title="Fraud Cases by Location")
+                    fig.update_layout(
+                        title_font_size=24,
+                        xaxis_title="Location",
+                        yaxis_title="Number of Fraud Cases",
+                        xaxis_title_font_size=18,
+                        yaxis_title_font_size=18,
+                        xaxis_tickfont_size=14,
+                        yaxis_tickfont_size=14
+                    )
                     st.plotly_chart(fig, use_container_width=True)
                 
                 # Time analysis
@@ -599,33 +675,61 @@ def main():
                     time_column = 'time'
                 
                 if time_column:
-                    st.subheader("Fraud by Time")
+                    st.markdown('<h3 class="analytics-subheader">🕐 Fraud by Time</h3>', unsafe_allow_html=True)
                     try:
                         fraud_df['hour'] = pd.to_datetime(fraud_df[time_column]).dt.hour
                         hour_counts = fraud_df['hour'].value_counts().sort_index()
                         fig = px.line(x=hour_counts.index, y=hour_counts.values, 
                                     title="Fraud Cases by Hour of Day")
+                        fig.update_layout(
+                            title_font_size=24,
+                            xaxis_title="Hour of Day",
+                            yaxis_title="Number of Fraud Cases",
+                            xaxis_title_font_size=18,
+                            yaxis_title_font_size=18,
+                            xaxis_tickfont_size=14,
+                            yaxis_tickfont_size=14
+                        )
                         st.plotly_chart(fig, use_container_width=True)
                     except:
-                        st.info("Could not analyze time patterns")
+                        st.markdown('<p class="analytics-text">Could not analyze time patterns</p>', unsafe_allow_html=True)
                 
                 # Merchant analysis
                 if 'merchant' in fraud_df.columns:
-                    st.subheader("Fraud by Merchant")
+                    st.markdown('<h3 class="analytics-subheader">🏪 Fraud by Merchant</h3>', unsafe_allow_html=True)
                     merchant_counts = fraud_df['merchant'].value_counts().head(10)
                     fig = px.bar(x=merchant_counts.index, y=merchant_counts.values, 
                                title="Top 10 Fraudulent Merchants")
+                    fig.update_layout(
+                        title_font_size=24,
+                        xaxis_title="Merchant Name",
+                        yaxis_title="Number of Fraud Cases",
+                        xaxis_title_font_size=18,
+                        yaxis_title_font_size=18,
+                        xaxis_tickfont_size=14,
+                        yaxis_tickfont_size=14
+                    )
                     st.plotly_chart(fig, use_container_width=True)
                 
                 # Category analysis
                 if 'category' in fraud_df.columns:
-                    st.subheader("Fraud by Category")
+                    st.markdown('<h3 class="analytics-subheader">📊 Fraud by Category</h3>', unsafe_allow_html=True)
                     category_counts = fraud_df['category'].value_counts()
                     fig = px.pie(values=category_counts.values, names=category_counts.index, 
                                title="Fraud Distribution by Category")
+                    fig.update_layout(
+                        title_font_size=24,
+                        legend_font_size=20,
+                        height=800,
+                        width=1000
+                    )
+                    fig.update_traces(
+                        textfont_size=18,
+                        textinfo='percent+label'
+                    )
                     st.plotly_chart(fig, use_container_width=True)
         else:
-            st.info("No fraud data available for analytics. Upload some fraud cases first.")
+            st.markdown('<p class="analytics-text">No fraud data available for analytics. Upload some fraud cases first.</p>', unsafe_allow_html=True)
 
 if __name__ == "__main__":
     main() 
