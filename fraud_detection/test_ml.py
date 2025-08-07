@@ -17,14 +17,13 @@ def test_ml_system():
     # Load sample data
     print("📊 Loading training data...")
     try:
-        with open("data/large_financial_data.json", "r") as f:
-            data = json.load(f)
-            transactions = data.get('transactions', [])
+        with open("sample_transactions.json", "r") as f:
+            transactions = json.load(f)
         
         print(f"Loaded {len(transactions)} transactions")
         
-        # Use a subset for faster testing
-        sample_transactions = transactions[:1000]  # First 1000 transactions
+        # Use all transactions for testing (sample_transactions.json is already small)
+        sample_transactions = transactions
         print(f"Using {len(sample_transactions)} transactions for testing")
         
     except Exception as e:
@@ -38,7 +37,7 @@ def test_ml_system():
         
         print("\n📈 Model Performance:")
         for model_name, metrics in performance.items():
-            print(f"{model_name}: Accuracy={metrics['accuracy']:.3f}, AUC={metrics['auc']:.3f}")
+            print(f"{model_name}: Accuracy={metrics['accuracy']:.3f}")
         
     except Exception as e:
         print(f"Error training models: {e}")

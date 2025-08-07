@@ -6,7 +6,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.svm import SVC
 from sklearn.preprocessing import StandardScaler, LabelEncoder
 from sklearn.model_selection import train_test_split, cross_val_score
-from sklearn.metrics import classification_report, confusion_matrix, roc_auc_score
+from sklearn.metrics import classification_report, confusion_matrix
 from sklearn.feature_extraction.text import TfidfVectorizer
 import pickle
 import os
@@ -246,17 +246,15 @@ class FraudDetectionML:
             
             # Calculate metrics
             accuracy = (y_pred == y_test).mean()
-            auc = roc_auc_score(y_test, y_pred_proba)
             
             self.models[name] = model
             self.model_performance[name] = {
                 'accuracy': accuracy,
-                'auc': auc,
                 'predictions': y_pred,
                 'probabilities': y_pred_proba
             }
             
-            print(f"{name} - Accuracy: {accuracy:.3f}, AUC: {auc:.3f}")
+            print(f"{name} - Accuracy: {accuracy:.3f}")
         
         return self.model_performance
     
@@ -330,8 +328,7 @@ class FraudDetectionML:
             'feature_names': self.feature_names,
             'model_performance': {
                 name: {
-                    'accuracy': float(metrics['accuracy']),
-                    'auc': float(metrics['auc'])
+                    'accuracy': float(metrics['accuracy'])
                 }
                 for name, metrics in self.model_performance.items()
             }

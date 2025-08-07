@@ -22,7 +22,7 @@ This implementation adds comprehensive machine learning capabilities to your fra
 - **Metadata features**: Invoice details, itemized breakdown
 
 ### 3. **Model Performance Analytics**
-- Accuracy and AUC metrics
+- Accuracy metrics
 - Feature importance analysis
 - Model comparison visualizations
 - Cross-validation results
@@ -133,12 +133,12 @@ def train_models(self, transactions, labels=None):
 
 Based on testing with your data:
 
-| Model | Accuracy | AUC | Best For |
-|-------|----------|-----|----------|
-| Random Forest | 0.825 | 0.815 | Overall best performance |
-| Logistic Regression | 0.750 | 0.701 | Interpretability |
-| SVM | 0.700 | 0.812 | High-dimensional data |
-| Isolation Forest | 0.625 | 0.567 | Anomaly detection |
+| Model | Accuracy | Best For |
+|-------|----------|----------|
+| Random Forest | 0.825 | Overall best performance |
+| Logistic Regression | 0.750 | Interpretability |
+| SVM | 0.700 | High-dimensional data |
+| Isolation Forest | 0.625 | Anomaly detection |
 
 ## 🔍 Feature Importance
 

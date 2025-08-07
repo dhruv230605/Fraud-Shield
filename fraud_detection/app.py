@@ -19,8 +19,7 @@ load_dotenv(dotenv_path="/Users/dhruv/Documents/Internship/UC2/.env")
 st.set_page_config(
     page_title="Fraud Detection System",
     page_icon="🕵️",
-    layout="wide",
-    initial_sidebar_state="expanded"
+    layout="wide"
 )
 
 # Custom CSS for better styling
@@ -229,10 +228,6 @@ def main():
     # Header
     st.markdown('<h1 class="main-header">🕵️ Fraud Detection System</h1>', unsafe_allow_html=True)
     
-    # Sidebar
-    st.sidebar.title("Settings")
-    threshold = st.sidebar.slider("Fraud Detection Threshold", 0.0, 1.0, 0.85, 0.05)
-    
     # Load fraud vectors
     with st.spinner("Loading fraud detection system..."):
         index, fraud_meta, known_frauds = load_fraud_vectors()
@@ -242,6 +237,10 @@ def main():
     
     with tab1:
         st.header("Transaction Analysis")
+        
+        # Settings
+        st.subheader("Settings")
+        threshold = st.slider("Fraud Detection Threshold", 0.0, 1.0, 0.85, 0.05)
         
         # File upload
         uploaded_file = st.file_uploader(
@@ -386,8 +385,7 @@ def main():
             performance_df = pd.DataFrame([
                 {
                     'Model': name,
-                    'Accuracy': metrics['accuracy'],
-                    'AUC': metrics['auc']
+                    'Accuracy': metrics['accuracy']
                 }
                 for name, metrics in st.session_state.model_performance.items()
             ])
@@ -399,10 +397,8 @@ def main():
             
             models = list(st.session_state.model_performance.keys())
             accuracies = [st.session_state.model_performance[m]['accuracy'] for m in models]
-            aucs = [st.session_state.model_performance[m]['auc'] for m in models]
             
             fig.add_trace(go.Bar(name='Accuracy', x=models, y=accuracies, marker_color='lightblue'))
-            fig.add_trace(go.Bar(name='AUC', x=models, y=aucs, marker_color='lightcoral'))
             
             fig.update_layout(
                 title="Model Performance Comparison",

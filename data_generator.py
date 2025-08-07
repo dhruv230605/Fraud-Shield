@@ -328,28 +328,12 @@ if __name__ == "__main__":
     with open("backend/users.json", "w") as f:
         json.dump(dataset["users"], f, indent=2)
 
-    # Save transactions in the format required by fraud_detection/transactions.json
+    # Save transactions in the format required by fraud_detection/sample_transactions.json
     # The transactions are already in the correct format, just save them directly
     transactions_for_fraud = []
     for txn in dataset["transactions"]:
-        # Create simplified version for fraud detection (basic fields)
+        # Create enhanced version matching sample_transactions.json format
         transactions_for_fraud.append({
-            "user_id": txn["user_id"],
-            "amount": txn["amount"],
-            "merchant": txn["merchant"],
-            "location": txn["location"],
-            "timestamp": txn["timestamp"],
-            "category": txn["category"]
-        })
-    with open("fraud_detection/transactions.json", "w") as f:
-        json.dump(transactions_for_fraud, f, indent=2)
-
-    # Generate fraud_vectors.json using a simple rule-based approach
-    major_cities = ["Mumbai", "Delhi", "Bangalore", "Hyderabad", "Chennai", "Kolkata", "Pune", "Ahmedabad"]
-    fraud_vectors = []
-    for txn in dataset["transactions"]:  # Use full transaction data for fraud vectors
-        # Create fraud vector with enhanced data
-        fraud_vector = {
             "user_id": txn["user_id"],
             "amount": txn["amount"],
             "merchant": txn["merchant"],
@@ -360,8 +344,14 @@ if __name__ == "__main__":
             "currency": txn["currency"],
             "tags": txn["tags"],
             "metadata": txn["metadata"]
-        }
-        
+        })
+    with open("fraud_detection/sample_transactions.json", "w") as f:
+        json.dump(transactions_for_fraud, f, indent=2)
+
+    # Generate fraud_vectors.json using enhanced transaction data
+    major_cities = ["Mumbai", "Delhi", "Bangalore", "Hyderabad", "Chennai", "Kolkata", "Pune", "Ahmedabad"]
+    fraud_vectors = []
+    for txn in dataset["transactions"]:  # Use full transaction data for fraud vectors
         # Apply fraud detection rules
         is_fraud = False
         if txn["amount"] > 5000:
@@ -376,7 +366,7 @@ if __name__ == "__main__":
             is_fraud = True
         
         if is_fraud:
-            fraud_vectors.append(fraud_vector)
+            fraud_vectors.append(txn)  # Use the full enhanced transaction
     
     with open("fraud_detection/fraud_vectors.json", "w") as f:
         json.dump(fraud_vectors, f, indent=2)

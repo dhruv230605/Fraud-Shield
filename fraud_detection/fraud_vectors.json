@@ -5,7 +5,32 @@
     "merchant": "Ajio",
     "location": "Bangalore",
     "timestamp": "2025-04-26T12:40:29.740355",
-    "category": "shopping"
+    "category": "shopping",
+    "payment_method": "cash",
+    "currency": "USD",
+    "tags": [
+      "shopping",
+      "fashion",
+      "retail",
+      "personal"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 66,
+      "invoice_details": {
+        "invoice_number": "INV-1769",
+        "tax_amount": 998.8
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Designer Dress",
+          "price": 4994.0
+        },
+        {
+          "item": "Shoes",
+          "price": 4994.0
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -13,7 +38,31 @@
     "merchant": "edX",
     "location": "Ahmedabad",
     "timestamp": "2024-12-31T04:54:39.642406",
-    "category": "education"
+    "category": "education",
+    "payment_method": "online",
+    "currency": "EUR",
+    "tags": [
+      "education",
+      "online_course",
+      "learning"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 87,
+      "invoice_details": {
+        "invoice_number": "INV-3224",
+        "tax_amount": 638.38
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Python Programming Course",
+          "price": 3191.9
+        },
+        {
+          "item": "Data Science Course",
+          "price": 3191.9
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -21,7 +70,36 @@
     "merchant": "HDFC Securities",
     "location": "Bangalore",
     "timestamp": "2024-10-28T13:34:18.067820",
-    "category": "investment"
+    "category": "investment",
+    "payment_method": "cash",
+    "currency": "EUR",
+    "tags": [
+      "investment",
+      "business",
+      "financial",
+      "gift"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 38,
+      "invoice_details": {
+        "invoice_number": "INV-6061",
+        "tax_amount": 871.82
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Mutual Fund",
+          "price": 2906.07
+        },
+        {
+          "item": "ETF",
+          "price": 2906.07
+        },
+        {
+          "item": "Stock Purchase",
+          "price": 2906.0799999999995
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -29,7 +107,37 @@
     "merchant": "IRCTC",
     "location": "Hyderabad",
     "timestamp": "2025-03-14T00:14:50.693357",
-    "category": "travel"
+    "category": "travel",
+    "payment_method": "upi",
+    "currency": "EUR",
+    "tags": [
+      "travel",
+      "transportation",
+      "booking",
+      "personal",
+      "international"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 98,
+      "invoice_details": {
+        "invoice_number": "INV-1214",
+        "tax_amount": 623.96
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Train Ticket - AC 2 Tier",
+          "price": 2079.87
+        },
+        {
+          "item": "Train Ticket - AC 2 Tier",
+          "price": 2079.87
+        },
+        {
+          "item": "Hotel Booking",
+          "price": 2079.87
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -37,7 +145,32 @@
     "merchant": "D-Mart",
     "location": "Mumbai",
     "timestamp": "2024-11-18T22:48:56.963292",
-    "category": "groceries"
+    "category": "groceries",
+    "payment_method": "card",
+    "currency": "INR",
+    "tags": [
+      "groceries",
+      "household",
+      "essentials",
+      "international"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 62,
+      "invoice_details": {
+        "invoice_number": "INV-4749",
+        "tax_amount": 685.43
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Dairy Products",
+          "price": 3427.17
+        },
+        {
+          "item": "Household Items",
+          "price": 3427.17
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -45,7 +178,37 @@
     "merchant": "Uber Eats",
     "location": "Chennai",
     "timestamp": "2024-12-19T07:21:49.683666",
-    "category": "dining"
+    "category": "dining",
+    "payment_method": "online",
+    "currency": "USD",
+    "tags": [
+      "dining",
+      "food_delivery",
+      "restaurant",
+      "international",
+      "personal"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 14,
+      "invoice_details": {
+        "invoice_number": "INV-5337",
+        "tax_amount": 974.69
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Restaurant Order",
+          "price": 3248.97
+        },
+        {
+          "item": "Restaurant Order",
+          "price": 3248.98
+        },
+        {
+          "item": "Restaurant Order",
+          "price": 3248.9700000000007
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -53,7 +216,36 @@
     "merchant": "Jio",
     "location": "Mumbai",
     "timestamp": "2025-03-11T22:55:22.875995",
-    "category": "utilities"
+    "category": "utilities",
+    "payment_method": "online",
+    "currency": "USD",
+    "tags": [
+      "utilities",
+      "bills",
+      "services",
+      "business"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 28,
+      "invoice_details": {
+        "invoice_number": "INV-6277",
+        "tax_amount": 577.29
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Mobile Bill",
+          "price": 1924.29
+        },
+        {
+          "item": "Mobile Bill",
+          "price": 1924.28
+        },
+        {
+          "item": "Mobile Bill",
+          "price": 1924.2899999999997
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -61,7 +253,37 @@
     "merchant": "Myntra",
     "location": "Delhi",
     "timestamp": "2024-10-15T20:08:03.146032",
-    "category": "shopping"
+    "category": "shopping",
+    "payment_method": "upi",
+    "currency": "USD",
+    "tags": [
+      "shopping",
+      "fashion",
+      "retail",
+      "international",
+      "business"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 63,
+      "invoice_details": {
+        "invoice_number": "INV-9479",
+        "tax_amount": 533.82
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Shoes",
+          "price": 1779.4
+        },
+        {
+          "item": "Designer Dress",
+          "price": 1779.39
+        },
+        {
+          "item": "Jewelry",
+          "price": 1779.3999999999994
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -69,7 +291,36 @@
     "merchant": "MedPlus",
     "location": "Pune",
     "timestamp": "2024-09-17T20:19:24.523558",
-    "category": "healthcare"
+    "category": "healthcare",
+    "payment_method": "cash",
+    "currency": "USD",
+    "tags": [
+      "healthcare",
+      "medicine",
+      "medical",
+      "international"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 13,
+      "invoice_details": {
+        "invoice_number": "INV-7311",
+        "tax_amount": 642.06
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Prescription Medicine",
+          "price": 2140.19
+        },
+        {
+          "item": "Medical Test",
+          "price": 2140.19
+        },
+        {
+          "item": "Medical Test",
+          "price": 2140.189999999999
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -77,7 +328,32 @@
     "merchant": "Zerodha",
     "location": "Chennai",
     "timestamp": "2024-12-10T19:12:56.362904",
-    "category": "investment"
+    "category": "investment",
+    "payment_method": "cash",
+    "currency": "INR",
+    "tags": [
+      "investment",
+      "business",
+      "financial",
+      "personal"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 42,
+      "invoice_details": {
+        "invoice_number": "INV-3558",
+        "tax_amount": 730.67
+      },
+      "itemized_breakdown": [
+        {
+          "item": "ETF",
+          "price": 3653.34
+        },
+        {
+          "item": "ETF",
+          "price": 3653.3499999999995
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -85,7 +361,33 @@
     "merchant": "Reliance Fresh",
     "location": "Ahmedabad",
     "timestamp": "2024-12-11T05:35:43.312813",
-    "category": "groceries"
+    "category": "groceries",
+    "payment_method": "online",
+    "currency": "EUR",
+    "tags": [
+      "groceries",
+      "household",
+      "essentials",
+      "international",
+      "urgent"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 93,
+      "invoice_details": {
+        "invoice_number": "INV-6227",
+        "tax_amount": 861.53
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Groceries - Monthly",
+          "price": 4307.64
+        },
+        {
+          "item": "Dairy Products",
+          "price": 4307.64
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -93,7 +395,35 @@
     "merchant": "Flipkart",
     "location": "Ahmedabad",
     "timestamp": "2025-07-12T02:52:21.401061",
-    "category": "electronics"
+    "category": "electronics",
+    "payment_method": "cash",
+    "currency": "EUR",
+    "tags": [
+      "electronics",
+      "tech",
+      "gadgets"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 54,
+      "invoice_details": {
+        "invoice_number": "INV-4822",
+        "tax_amount": 603.82
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Laptop",
+          "price": 2012.75
+        },
+        {
+          "item": "Camera",
+          "price": 2012.74
+        },
+        {
+          "item": "Tablet",
+          "price": 2012.7499999999998
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -101,7 +431,29 @@
     "merchant": "Domino's",
     "location": "Mumbai",
     "timestamp": "2025-01-23T02:23:59.865626",
-    "category": "dining"
+    "category": "dining",
+    "payment_method": "cash",
+    "currency": "EUR",
+    "tags": [
+      "dining",
+      "food_delivery",
+      "restaurant",
+      "business",
+      "international"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 89,
+      "invoice_details": {
+        "invoice_number": "INV-5411",
+        "tax_amount": 858.64
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Lunch",
+          "price": 8586.35
+        }
+      ]
+    }
   },
   {
     "user_id": "barbara.smith@example.com",
@@ -109,7 +461,31 @@
     "merchant": "Reliance Digital",
     "location": "Hyderabad",
     "timestamp": "2024-07-23T23:46:06.284210",
-    "category": "electronics"
+    "category": "electronics",
+    "payment_method": "upi",
+    "currency": "EUR",
+    "tags": [
+      "electronics",
+      "tech",
+      "gadgets"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 15,
+      "invoice_details": {
+        "invoice_number": "INV-5119",
+        "tax_amount": 749.38
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Headphones",
+          "price": 3746.91
+        },
+        {
+          "item": "Headphones",
+          "price": 3746.9000000000005
+        }
+      ]
+    }
   },
   {
     "user_id": "james.gonzalez@example.com",
@@ -117,7 +493,36 @@
     "merchant": "Myntra",
     "location": "Delhi",
     "timestamp": "2025-02-02T04:47:30.109377",
-    "category": "shopping"
+    "category": "shopping",
+    "payment_method": "card",
+    "currency": "INR",
+    "tags": [
+      "shopping",
+      "fashion",
+      "retail",
+      "international"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 13,
+      "invoice_details": {
+        "invoice_number": "INV-6188",
+        "tax_amount": 853.11
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Designer Dress",
+          "price": 2843.69
+        },
+        {
+          "item": "Handbag",
+          "price": 2843.69
+        },
+        {
+          "item": "Handbag",
+          "price": 2843.689999999999
+        }
+      ]
+    }
   },
   {
     "user_id": "james.gonzalez@example.com",
@@ -125,7 +530,33 @@
     "merchant": "MakeMyTrip",
     "location": "Mumbai",
     "timestamp": "2025-06-12T15:27:32.928233",
-    "category": "travel"
+    "category": "travel",
+    "payment_method": "upi",
+    "currency": "EUR",
+    "tags": [
+      "travel",
+      "transportation",
+      "booking",
+      "night_transaction",
+      "urgent"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 43,
+      "invoice_details": {
+        "invoice_number": "INV-6154",
+        "tax_amount": 587.35
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Train Ticket - AC 2 Tier",
+          "price": 2936.73
+        },
+        {
+          "item": "Train Ticket - AC 2 Tier",
+          "price": 2936.73
+        }
+      ]
+    }
   },
   {
     "user_id": "james.gonzalez@example.com",
@@ -133,7 +564,33 @@
     "merchant": "WhiteHat Jr",
     "location": "Chennai",
     "timestamp": "2024-12-10T07:20:20.830707",
-    "category": "education"
+    "category": "education",
+    "payment_method": "upi",
+    "currency": "EUR",
+    "tags": [
+      "education",
+      "online_course",
+      "learning",
+      "business",
+      "personal"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 62,
+      "invoice_details": {
+        "invoice_number": "INV-6959",
+        "tax_amount": 737.07
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Python Programming Course",
+          "price": 3685.32
+        },
+        {
+          "item": "Web Development",
+          "price": 3685.3299999999995
+        }
+      ]
+    }
   },
   {
     "user_id": "james.gonzalez@example.com",
@@ -141,7 +598,28 @@
     "merchant": "Apollo",
     "location": "Hyderabad",
     "timestamp": "2025-05-01T18:21:52.538435",
-    "category": "healthcare"
+    "category": "healthcare",
+    "payment_method": "card",
+    "currency": "INR",
+    "tags": [
+      "healthcare",
+      "medicine",
+      "medical",
+      "business"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 13,
+      "invoice_details": {
+        "invoice_number": "INV-1447",
+        "tax_amount": 823.27
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Doctor Consultation",
+          "price": 8232.67
+        }
+      ]
+    }
   },
   {
     "user_id": "james.gonzalez@example.com",
@@ -149,7 +627,29 @@
     "merchant": "Byju's",
     "location": "Ahmedabad",
     "timestamp": "2025-01-25T23:09:12.191884",
-    "category": "education"
+    "category": "education",
+    "payment_method": "online",
+    "currency": "USD",
+    "tags": [
+      "education",
+      "online_course",
+      "learning",
+      "international",
+      "urgent"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 61,
+      "invoice_details": {
+        "invoice_number": "INV-9315",
+        "tax_amount": 557.15
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Python Programming Course",
+          "price": 5571.47
+        }
+      ]
+    }
   },
   {
     "user_id": "michele.hale@example.com",
@@ -157,7 +657,37 @@
     "merchant": "Vodafone",
     "location": "Pune",
     "timestamp": "2025-06-24T16:28:14.544663",
-    "category": "utilities"
+    "category": "utilities",
+    "payment_method": "upi",
+    "currency": "INR",
+    "tags": [
+      "utilities",
+      "bills",
+      "services",
+      "international",
+      "business"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 15,
+      "invoice_details": {
+        "invoice_number": "INV-6979",
+        "tax_amount": 566.1
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Electricity Bill",
+          "price": 1887.01
+        },
+        {
+          "item": "Internet Bill",
+          "price": 1887.01
+        },
+        {
+          "item": "Water Bill",
+          "price": 1887.0199999999998
+        }
+      ]
+    }
   },
   {
     "user_id": "michele.hale@example.com",
@@ -165,7 +695,37 @@
     "merchant": "Airtel",
     "location": "Kolkata",
     "timestamp": "2025-07-05T09:12:20.118125",
-    "category": "utilities"
+    "category": "utilities",
+    "payment_method": "online",
+    "currency": "EUR",
+    "tags": [
+      "utilities",
+      "bills",
+      "services",
+      "night_transaction",
+      "gift"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 76,
+      "invoice_details": {
+        "invoice_number": "INV-8159",
+        "tax_amount": 935.81
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Electricity Bill",
+          "price": 3119.35
+        },
+        {
+          "item": "Electricity Bill",
+          "price": 3119.35
+        },
+        {
+          "item": "Mobile Bill",
+          "price": 3119.359999999999
+        }
+      ]
+    }
   },
   {
     "user_id": "michele.hale@example.com",
@@ -173,7 +733,31 @@
     "merchant": "Unacademy",
     "location": "Pune",
     "timestamp": "2025-05-11T16:31:37.685348",
-    "category": "education"
+    "category": "education",
+    "payment_method": "online",
+    "currency": "EUR",
+    "tags": [
+      "education",
+      "online_course",
+      "learning"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 77,
+      "invoice_details": {
+        "invoice_number": "INV-9310",
+        "tax_amount": 973.89
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Machine Learning Course",
+          "price": 4869.45
+        },
+        {
+          "item": "Web Development",
+          "price": 4869.46
+        }
+      ]
+    }
   },
   {
     "user_id": "michele.hale@example.com",
@@ -181,7 +765,37 @@
     "merchant": "Zerodha",
     "location": "Ahmedabad",
     "timestamp": "2024-12-15T00:32:44.629601",
-    "category": "investment"
+    "category": "investment",
+    "payment_method": "cash",
+    "currency": "INR",
+    "tags": [
+      "investment",
+      "business",
+      "financial",
+      "business",
+      "night_transaction"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 82,
+      "invoice_details": {
+        "invoice_number": "INV-5641",
+        "tax_amount": 501.44
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Bond Investment",
+          "price": 1671.47
+        },
+        {
+          "item": "ETF",
+          "price": 1671.47
+        },
+        {
+          "item": "Stock Purchase",
+          "price": 1671.4799999999998
+        }
+      ]
+    }
   },
   {
     "user_id": "michele.hale@example.com",
@@ -189,7 +803,37 @@
     "merchant": "MakeMyTrip",
     "location": "Hyderabad",
     "timestamp": "2024-11-20T02:56:36.252716",
-    "category": "travel"
+    "category": "travel",
+    "payment_method": "upi",
+    "currency": "INR",
+    "tags": [
+      "travel",
+      "transportation",
+      "booking",
+      "recurring",
+      "gift"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 86,
+      "invoice_details": {
+        "invoice_number": "INV-3180",
+        "tax_amount": 713.06
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Hotel Booking",
+          "price": 2376.88
+        },
+        {
+          "item": "Hotel Booking",
+          "price": 2376.88
+        },
+        {
+          "item": "Car Rental",
+          "price": 2376.88
+        }
+      ]
+    }
   },
   {
     "user_id": "michele.hale@example.com",
@@ -197,7 +841,31 @@
     "merchant": "Grofers",
     "location": "Bangalore",
     "timestamp": "2025-04-19T22:20:50.875464",
-    "category": "groceries"
+    "category": "groceries",
+    "payment_method": "card",
+    "currency": "EUR",
+    "tags": [
+      "groceries",
+      "household",
+      "essentials"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 20,
+      "invoice_details": {
+        "invoice_number": "INV-9300",
+        "tax_amount": 781.59
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Dairy Products",
+          "price": 3907.95
+        },
+        {
+          "item": "Household Items",
+          "price": 3907.96
+        }
+      ]
+    }
   },
   {
     "user_id": "michele.hale@example.com",
@@ -205,7 +873,27 @@
     "merchant": "Myntra",
     "location": "Pune",
     "timestamp": "2025-02-07T15:55:20.618512",
-    "category": "shopping"
+    "category": "shopping",
+    "payment_method": "upi",
+    "currency": "INR",
+    "tags": [
+      "shopping",
+      "fashion",
+      "retail"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 48,
+      "invoice_details": {
+        "invoice_number": "INV-8860",
+        "tax_amount": 907.21
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Jewelry",
+          "price": 9072.08
+        }
+      ]
+    }
   },
   {
     "user_id": "michele.hale@example.com",
@@ -213,7 +901,32 @@
     "merchant": "Airtel",
     "location": "Mumbai",
     "timestamp": "2025-04-22T15:51:25.064998",
-    "category": "utilities"
+    "category": "utilities",
+    "payment_method": "card",
+    "currency": "EUR",
+    "tags": [
+      "utilities",
+      "bills",
+      "services",
+      "personal"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 42,
+      "invoice_details": {
+        "invoice_number": "INV-3331",
+        "tax_amount": 917.91
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Mobile Bill",
+          "price": 4589.55
+        },
+        {
+          "item": "Internet Bill",
+          "price": 4589.55
+        }
+      ]
+    }
   },
   {
     "user_id": "michele.hale@example.com",
@@ -221,7 +934,36 @@
     "merchant": "PVR",
     "location": "Delhi",
     "timestamp": "2024-09-26T16:43:19.183109",
-    "category": "entertainment"
+    "category": "entertainment",
+    "payment_method": "card",
+    "currency": "USD",
+    "tags": [
+      "entertainment",
+      "leisure",
+      "streaming",
+      "gift"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 46,
+      "invoice_details": {
+        "invoice_number": "INV-2397",
+        "tax_amount": 546.33
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Movie Ticket",
+          "price": 1821.11
+        },
+        {
+          "item": "Concert Ticket",
+          "price": 1821.11
+        },
+        {
+          "item": "Movie Ticket",
+          "price": 1821.1100000000004
+        }
+      ]
+    }
   },
   {
     "user_id": "michele.hale@example.com",
@@ -229,7 +971,35 @@
     "merchant": "Reliance Fresh",
     "location": "Pune",
     "timestamp": "2025-02-04T01:46:16.280126",
-    "category": "groceries"
+    "category": "groceries",
+    "payment_method": "card",
+    "currency": "USD",
+    "tags": [
+      "groceries",
+      "household",
+      "essentials"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 11,
+      "invoice_details": {
+        "invoice_number": "INV-4293",
+        "tax_amount": 963.61
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Groceries - Monthly",
+          "price": 3212.03
+        },
+        {
+          "item": "Fresh Vegetables",
+          "price": 3212.02
+        },
+        {
+          "item": "Groceries - Monthly",
+          "price": 3212.0299999999993
+        }
+      ]
+    }
   },
   {
     "user_id": "michele.hale@example.com",
@@ -237,7 +1007,35 @@
     "merchant": "Vodafone",
     "location": "Delhi",
     "timestamp": "2024-07-31T14:10:48.386564",
-    "category": "utilities"
+    "category": "utilities",
+    "payment_method": "cash",
+    "currency": "USD",
+    "tags": [
+      "utilities",
+      "bills",
+      "services"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 78,
+      "invoice_details": {
+        "invoice_number": "INV-7983",
+        "tax_amount": 583.36
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Water Bill",
+          "price": 1944.52
+        },
+        {
+          "item": "Water Bill",
+          "price": 1944.52
+        },
+        {
+          "item": "Mobile Bill",
+          "price": 1944.5299999999997
+        }
+      ]
+    }
   },
   {
     "user_id": "michele.hale@example.com",
@@ -245,7 +1043,36 @@
     "merchant": "FoodPanda",
     "location": "Kolkata",
     "timestamp": "2025-05-20T20:22:56.513509",
-    "category": "dining"
+    "category": "dining",
+    "payment_method": "online",
+    "currency": "INR",
+    "tags": [
+      "dining",
+      "food_delivery",
+      "restaurant",
+      "gift"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 85,
+      "invoice_details": {
+        "invoice_number": "INV-5367",
+        "tax_amount": 622.22
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Restaurant Order",
+          "price": 2074.06
+        },
+        {
+          "item": "Restaurant Order",
+          "price": 2074.06
+        },
+        {
+          "item": "Restaurant Order",
+          "price": 2074.0500000000006
+        }
+      ]
+    }
   },
   {
     "user_id": "christopher.davis@example.com",
@@ -253,7 +1080,32 @@
     "merchant": "Unacademy",
     "location": "Chennai",
     "timestamp": "2024-10-01T23:05:48.166414",
-    "category": "education"
+    "category": "education",
+    "payment_method": "card",
+    "currency": "INR",
+    "tags": [
+      "education",
+      "online_course",
+      "learning",
+      "international"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 77,
+      "invoice_details": {
+        "invoice_number": "INV-6367",
+        "tax_amount": 992.41
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Machine Learning Course",
+          "price": 4962.04
+        },
+        {
+          "item": "Data Science Course",
+          "price": 4962.04
+        }
+      ]
+    }
   },
   {
     "user_id": "christopher.davis@example.com",
@@ -261,7 +1113,28 @@
     "merchant": "Poorvika",
     "location": "Pune",
     "timestamp": "2025-02-18T08:48:14.103487",
-    "category": "electronics"
+    "category": "electronics",
+    "payment_method": "card",
+    "currency": "EUR",
+    "tags": [
+      "electronics",
+      "tech",
+      "gadgets",
+      "night_transaction"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 89,
+      "invoice_details": {
+        "invoice_number": "INV-9017",
+        "tax_amount": 645.3
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Headphones",
+          "price": 6453.03
+        }
+      ]
+    }
   },
   {
     "user_id": "christopher.davis@example.com",
@@ -269,7 +1142,31 @@
     "merchant": "Spencer's",
     "location": "Pune",
     "timestamp": "2025-06-12T20:06:22.375075",
-    "category": "groceries"
+    "category": "groceries",
+    "payment_method": "card",
+    "currency": "EUR",
+    "tags": [
+      "groceries",
+      "household",
+      "essentials"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 89,
+      "invoice_details": {
+        "invoice_number": "INV-7121",
+        "tax_amount": 577.65
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Household Items",
+          "price": 2888.24
+        },
+        {
+          "item": "Household Items",
+          "price": 2888.24
+        }
+      ]
+    }
   },
   {
     "user_id": "christopher.davis@example.com",
@@ -277,7 +1174,28 @@
     "merchant": "Goibibo",
     "location": "Hyderabad",
     "timestamp": "2025-05-05T15:40:04.240031",
-    "category": "travel"
+    "category": "travel",
+    "payment_method": "online",
+    "currency": "INR",
+    "tags": [
+      "travel",
+      "transportation",
+      "booking",
+      "personal"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 79,
+      "invoice_details": {
+        "invoice_number": "INV-9167",
+        "tax_amount": 805.53
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Flight Ticket",
+          "price": 8055.33
+        }
+      ]
+    }
   },
   {
     "user_id": "christopher.davis@example.com",
@@ -285,7 +1203,32 @@
     "merchant": "MTNL",
     "location": "Ahmedabad",
     "timestamp": "2025-01-19T16:01:52.379806",
-    "category": "utilities"
+    "category": "utilities",
+    "payment_method": "cash",
+    "currency": "EUR",
+    "tags": [
+      "utilities",
+      "bills",
+      "services",
+      "urgent"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 36,
+      "invoice_details": {
+        "invoice_number": "INV-2018",
+        "tax_amount": 856.87
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Electricity Bill",
+          "price": 4284.34
+        },
+        {
+          "item": "Internet Bill",
+          "price": 4284.33
+        }
+      ]
+    }
   },
   {
     "user_id": "christopher.davis@example.com",
@@ -293,7 +1236,35 @@
     "merchant": "Vijay Sales",
     "location": "Hyderabad",
     "timestamp": "2024-07-30T10:50:36.998218",
-    "category": "electronics"
+    "category": "electronics",
+    "payment_method": "upi",
+    "currency": "INR",
+    "tags": [
+      "electronics",
+      "tech",
+      "gadgets"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 79,
+      "invoice_details": {
+        "invoice_number": "INV-8341",
+        "tax_amount": 541.54
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Smartphone",
+          "price": 1805.14
+        },
+        {
+          "item": "Laptop",
+          "price": 1805.14
+        },
+        {
+          "item": "Camera",
+          "price": 1805.1399999999996
+        }
+      ]
+    }
   },
   {
     "user_id": "christopher.davis@example.com",
@@ -301,7 +1272,32 @@
     "merchant": "edX",
     "location": "Delhi",
     "timestamp": "2025-06-09T20:18:25.800725",
-    "category": "education"
+    "category": "education",
+    "payment_method": "card",
+    "currency": "USD",
+    "tags": [
+      "education",
+      "online_course",
+      "learning",
+      "personal"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 32,
+      "invoice_details": {
+        "invoice_number": "INV-6481",
+        "tax_amount": 778.39
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Machine Learning Course",
+          "price": 3891.93
+        },
+        {
+          "item": "Data Science Course",
+          "price": 3891.93
+        }
+      ]
+    }
   },
   {
     "user_id": "christopher.davis@example.com",
@@ -309,7 +1305,28 @@
     "merchant": "Flipkart",
     "location": "Bangalore",
     "timestamp": "2024-12-03T06:54:43.215383",
-    "category": "shopping"
+    "category": "shopping",
+    "payment_method": "online",
+    "currency": "EUR",
+    "tags": [
+      "shopping",
+      "fashion",
+      "retail",
+      "night_transaction"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 93,
+      "invoice_details": {
+        "invoice_number": "INV-9227",
+        "tax_amount": 878.87
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Handbag",
+          "price": 8788.69
+        }
+      ]
+    }
   },
   {
     "user_id": "christopher.davis@example.com",
@@ -317,7 +1334,36 @@
     "merchant": "INOX",
     "location": "Ahmedabad",
     "timestamp": "2024-08-09T00:01:34.399066",
-    "category": "entertainment"
+    "category": "entertainment",
+    "payment_method": "upi",
+    "currency": "EUR",
+    "tags": [
+      "entertainment",
+      "leisure",
+      "streaming",
+      "international"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 38,
+      "invoice_details": {
+        "invoice_number": "INV-7133",
+        "tax_amount": 513.45
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Streaming Subscription",
+          "price": 1711.5
+        },
+        {
+          "item": "Concert Ticket",
+          "price": 1711.49
+        },
+        {
+          "item": "Streaming Subscription",
+          "price": 1711.4999999999998
+        }
+      ]
+    }
   },
   {
     "user_id": "christopher.davis@example.com",
@@ -325,7 +1371,32 @@
     "merchant": "KFC",
     "location": "Hyderabad",
     "timestamp": "2025-01-24T23:36:22.367104",
-    "category": "dining"
+    "category": "dining",
+    "payment_method": "cash",
+    "currency": "INR",
+    "tags": [
+      "dining",
+      "food_delivery",
+      "restaurant",
+      "urgent"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 98,
+      "invoice_details": {
+        "invoice_number": "INV-7117",
+        "tax_amount": 687.04
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Coffee",
+          "price": 3435.22
+        },
+        {
+          "item": "Restaurant Order",
+          "price": 3435.22
+        }
+      ]
+    }
   },
   {
     "user_id": "christopher.davis@example.com",
@@ -333,7 +1404,29 @@
     "merchant": "ICICI Direct",
     "location": "Hyderabad",
     "timestamp": "2024-09-16T10:22:58.572385",
-    "category": "investment"
+    "category": "investment",
+    "payment_method": "cash",
+    "currency": "EUR",
+    "tags": [
+      "investment",
+      "business",
+      "financial",
+      "night_transaction",
+      "business"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 17,
+      "invoice_details": {
+        "invoice_number": "INV-4406",
+        "tax_amount": 767.32
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Mutual Fund",
+          "price": 7673.24
+        }
+      ]
+    }
   },
   {
     "user_id": "travis.kim@example.com",
@@ -341,7 +1434,29 @@
     "merchant": "Purplle",
     "location": "Bangalore",
     "timestamp": "2024-09-13T23:06:29.050431",
-    "category": "shopping"
+    "category": "shopping",
+    "payment_method": "cash",
+    "currency": "USD",
+    "tags": [
+      "shopping",
+      "fashion",
+      "retail",
+      "urgent",
+      "business"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 42,
+      "invoice_details": {
+        "invoice_number": "INV-4062",
+        "tax_amount": 800.58
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Jewelry",
+          "price": 8005.75
+        }
+      ]
+    }
   },
   {
     "user_id": "travis.kim@example.com",
@@ -349,7 +1464,37 @@
     "merchant": "Swiggy",
     "location": "Hyderabad",
     "timestamp": "2025-06-07T16:18:10.153877",
-    "category": "dining"
+    "category": "dining",
+    "payment_method": "online",
+    "currency": "EUR",
+    "tags": [
+      "dining",
+      "food_delivery",
+      "restaurant",
+      "international",
+      "recurring"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 49,
+      "invoice_details": {
+        "invoice_number": "INV-2888",
+        "tax_amount": 647.64
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Coffee",
+          "price": 2158.8
+        },
+        {
+          "item": "Food Delivery",
+          "price": 2158.8
+        },
+        {
+          "item": "Coffee",
+          "price": 2158.7999999999993
+        }
+      ]
+    }
   },
   {
     "user_id": "travis.kim@example.com",
@@ -357,7 +1502,32 @@
     "merchant": "Tata Power",
     "location": "Bangalore",
     "timestamp": "2025-01-11T10:46:08.878375",
-    "category": "utilities"
+    "category": "utilities",
+    "payment_method": "upi",
+    "currency": "USD",
+    "tags": [
+      "utilities",
+      "bills",
+      "services",
+      "recurring"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 51,
+      "invoice_details": {
+        "invoice_number": "INV-4336",
+        "tax_amount": 934.85
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Internet Bill",
+          "price": 4674.24
+        },
+        {
+          "item": "Internet Bill",
+          "price": 4674.24
+        }
+      ]
+    }
   },
   {
     "user_id": "travis.kim@example.com",
@@ -365,7 +1535,27 @@
     "merchant": "Byju's",
     "location": "Pune",
     "timestamp": "2025-07-15T18:04:51.896287",
-    "category": "education"
+    "category": "education",
+    "payment_method": "cash",
+    "currency": "EUR",
+    "tags": [
+      "education",
+      "online_course",
+      "learning"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 67,
+      "invoice_details": {
+        "invoice_number": "INV-5761",
+        "tax_amount": 754.09
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Python Programming Course",
+          "price": 7540.86
+        }
+      ]
+    }
   },
   {
     "user_id": "travis.kim@example.com",
@@ -373,7 +1563,29 @@
     "merchant": "HDFC Securities",
     "location": "Pune",
     "timestamp": "2025-03-24T13:17:03.414425",
-    "category": "investment"
+    "category": "investment",
+    "payment_method": "cash",
+    "currency": "EUR",
+    "tags": [
+      "investment",
+      "business",
+      "financial",
+      "business",
+      "urgent"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 44,
+      "invoice_details": {
+        "invoice_number": "INV-3295",
+        "tax_amount": 621.99
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Stock Purchase",
+          "price": 6219.85
+        }
+      ]
+    }
   },
   {
     "user_id": "travis.kim@example.com",
@@ -381,7 +1593,37 @@
     "merchant": "Amazon",
     "location": "Kolkata",
     "timestamp": "2025-02-18T18:09:20.513912",
-    "category": "electronics"
+    "category": "electronics",
+    "payment_method": "card",
+    "currency": "EUR",
+    "tags": [
+      "electronics",
+      "tech",
+      "gadgets",
+      "business",
+      "gift"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 38,
+      "invoice_details": {
+        "invoice_number": "INV-7510",
+        "tax_amount": 691.77
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Smartphone",
+          "price": 2305.89
+        },
+        {
+          "item": "Smartphone",
+          "price": 2305.89
+        },
+        {
+          "item": "Smartphone",
+          "price": 2305.890000000001
+        }
+      ]
+    }
   },
   {
     "user_id": "lisa.carlson@example.com",
@@ -389,7 +1631,29 @@
     "merchant": "HDFC Securities",
     "location": "Delhi",
     "timestamp": "2024-09-25T10:37:34.767205",
-    "category": "investment"
+    "category": "investment",
+    "payment_method": "online",
+    "currency": "USD",
+    "tags": [
+      "investment",
+      "business",
+      "financial",
+      "business",
+      "personal"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 66,
+      "invoice_details": {
+        "invoice_number": "INV-1237",
+        "tax_amount": 604.11
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Bond Investment",
+          "price": 6041.05
+        }
+      ]
+    }
   },
   {
     "user_id": "lisa.carlson@example.com",
@@ -397,7 +1661,27 @@
     "merchant": "Booking.com",
     "location": "Ahmedabad",
     "timestamp": "2025-05-25T15:45:24.577909",
-    "category": "travel"
+    "category": "travel",
+    "payment_method": "online",
+    "currency": "INR",
+    "tags": [
+      "travel",
+      "transportation",
+      "booking"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 56,
+      "invoice_details": {
+        "invoice_number": "INV-6831",
+        "tax_amount": 943.49
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Hotel Booking",
+          "price": 9434.94
+        }
+      ]
+    }
   },
   {
     "user_id": "lisa.carlson@example.com",
@@ -405,7 +1689,36 @@
     "merchant": "Myntra",
     "location": "Delhi",
     "timestamp": "2024-12-01T16:42:02.344298",
-    "category": "shopping"
+    "category": "shopping",
+    "payment_method": "cash",
+    "currency": "INR",
+    "tags": [
+      "shopping",
+      "fashion",
+      "retail",
+      "international"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 66,
+      "invoice_details": {
+        "invoice_number": "INV-6061",
+        "tax_amount": 997.74
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Handbag",
+          "price": 3325.78
+        },
+        {
+          "item": "Handbag",
+          "price": 3325.78
+        },
+        {
+          "item": "Watch",
+          "price": 3325.7899999999995
+        }
+      ]
+    }
   },
   {
     "user_id": "lisa.carlson@example.com",
@@ -413,7 +1726,29 @@
     "merchant": "Flipkart",
     "location": "Mumbai",
     "timestamp": "2025-01-16T12:52:38.964862",
-    "category": "shopping"
+    "category": "shopping",
+    "payment_method": "cash",
+    "currency": "EUR",
+    "tags": [
+      "shopping",
+      "fashion",
+      "retail",
+      "urgent",
+      "night_transaction"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 28,
+      "invoice_details": {
+        "invoice_number": "INV-2805",
+        "tax_amount": 816.04
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Watch",
+          "price": 8160.39
+        }
+      ]
+    }
   },
   {
     "user_id": "lisa.carlson@example.com",
@@ -421,7 +1756,35 @@
     "merchant": "Byju's",
     "location": "Ahmedabad",
     "timestamp": "2025-01-03T06:15:58.175109",
-    "category": "education"
+    "category": "education",
+    "payment_method": "card",
+    "currency": "EUR",
+    "tags": [
+      "education",
+      "online_course",
+      "learning"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 83,
+      "invoice_details": {
+        "invoice_number": "INV-8708",
+        "tax_amount": 864.4
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Data Science Course",
+          "price": 2881.34
+        },
+        {
+          "item": "Machine Learning Course",
+          "price": 2881.34
+        },
+        {
+          "item": "Data Science Course",
+          "price": 2881.34
+        }
+      ]
+    }
   },
   {
     "user_id": "lisa.carlson@example.com",
@@ -429,7 +1792,32 @@
     "merchant": "Upstox",
     "location": "Kolkata",
     "timestamp": "2025-01-08T10:30:58.382051",
-    "category": "investment"
+    "category": "investment",
+    "payment_method": "cash",
+    "currency": "INR",
+    "tags": [
+      "investment",
+      "business",
+      "financial",
+      "international"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 73,
+      "invoice_details": {
+        "invoice_number": "INV-3494",
+        "tax_amount": 517.14
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Bond Investment",
+          "price": 2585.71
+        },
+        {
+          "item": "Bond Investment",
+          "price": 2585.71
+        }
+      ]
+    }
   },
   {
     "user_id": "lisa.carlson@example.com",
@@ -437,7 +1825,28 @@
     "merchant": "Udemy",
     "location": "Kolkata",
     "timestamp": "2024-12-26T03:07:44.550295",
-    "category": "education"
+    "category": "education",
+    "payment_method": "cash",
+    "currency": "USD",
+    "tags": [
+      "education",
+      "online_course",
+      "learning",
+      "personal"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 64,
+      "invoice_details": {
+        "invoice_number": "INV-1138",
+        "tax_amount": 873.86
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Web Development",
+          "price": 8738.57
+        }
+      ]
+    }
   },
   {
     "user_id": "lisa.carlson@example.com",
@@ -445,7 +1854,29 @@
     "merchant": "IRCTC",
     "location": "Bangalore",
     "timestamp": "2024-09-12T12:19:32.469022",
-    "category": "travel"
+    "category": "travel",
+    "payment_method": "upi",
+    "currency": "INR",
+    "tags": [
+      "travel",
+      "transportation",
+      "booking",
+      "urgent",
+      "international"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 48,
+      "invoice_details": {
+        "invoice_number": "INV-5496",
+        "tax_amount": 750.89
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Hotel Booking",
+          "price": 7508.93
+        }
+      ]
+    }
   },
   {
     "user_id": "lisa.carlson@example.com",
@@ -453,7 +1884,29 @@
     "merchant": "Coursera",
     "location": "Kolkata",
     "timestamp": "2025-01-11T09:39:06.555926",
-    "category": "education"
+    "category": "education",
+    "payment_method": "online",
+    "currency": "INR",
+    "tags": [
+      "education",
+      "online_course",
+      "learning",
+      "recurring",
+      "personal"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 63,
+      "invoice_details": {
+        "invoice_number": "INV-8112",
+        "tax_amount": 588.8
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Web Development",
+          "price": 5888.02
+        }
+      ]
+    }
   },
   {
     "user_id": "lisa.carlson@example.com",
@@ -461,7 +1914,29 @@
     "merchant": "Netflix",
     "location": "Mumbai",
     "timestamp": "2024-12-14T04:19:27.282738",
-    "category": "entertainment"
+    "category": "entertainment",
+    "payment_method": "cash",
+    "currency": "USD",
+    "tags": [
+      "entertainment",
+      "leisure",
+      "streaming",
+      "urgent",
+      "night_transaction"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 16,
+      "invoice_details": {
+        "invoice_number": "INV-1178",
+        "tax_amount": 808.75
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Movie Ticket",
+          "price": 8087.49
+        }
+      ]
+    }
   },
   {
     "user_id": "lisa.carlson@example.com",
@@ -469,7 +1944,27 @@
     "merchant": "Cleartrip",
     "location": "Pune",
     "timestamp": "2024-10-23T07:35:31.046732",
-    "category": "travel"
+    "category": "travel",
+    "payment_method": "online",
+    "currency": "INR",
+    "tags": [
+      "travel",
+      "transportation",
+      "booking"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 25,
+      "invoice_details": {
+        "invoice_number": "INV-8486",
+        "tax_amount": 539.94
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Car Rental",
+          "price": 5399.35
+        }
+      ]
+    }
   },
   {
     "user_id": "roger.hughes@example.com",
@@ -477,7 +1972,32 @@
     "merchant": "Poorvika",
     "location": "Chennai",
     "timestamp": "2025-02-13T10:13:44.256355",
-    "category": "electronics"
+    "category": "electronics",
+    "payment_method": "card",
+    "currency": "USD",
+    "tags": [
+      "electronics",
+      "tech",
+      "gadgets",
+      "gift"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 33,
+      "invoice_details": {
+        "invoice_number": "INV-3721",
+        "tax_amount": 680.22
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Laptop",
+          "price": 3401.08
+        },
+        {
+          "item": "Smartphone",
+          "price": 3401.08
+        }
+      ]
+    }
   },
   {
     "user_id": "roger.hughes@example.com",
@@ -485,7 +2005,32 @@
     "merchant": "Myntra",
     "location": "Ahmedabad",
     "timestamp": "2025-07-16T03:17:34.342169",
-    "category": "shopping"
+    "category": "shopping",
+    "payment_method": "upi",
+    "currency": "USD",
+    "tags": [
+      "shopping",
+      "fashion",
+      "retail",
+      "business"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 94,
+      "invoice_details": {
+        "invoice_number": "INV-2050",
+        "tax_amount": 575.5
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Watch",
+          "price": 2877.5
+        },
+        {
+          "item": "Shoes",
+          "price": 2877.5
+        }
+      ]
+    }
   },
   {
     "user_id": "roger.hughes@example.com",
@@ -493,7 +2038,33 @@
     "merchant": "PVR",
     "location": "Mumbai",
     "timestamp": "2024-10-21T03:19:13.720434",
-    "category": "entertainment"
+    "category": "entertainment",
+    "payment_method": "online",
+    "currency": "USD",
+    "tags": [
+      "entertainment",
+      "leisure",
+      "streaming",
+      "recurring",
+      "night_transaction"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 82,
+      "invoice_details": {
+        "invoice_number": "INV-1722",
+        "tax_amount": 563.79
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Game",
+          "price": 2818.93
+        },
+        {
+          "item": "Streaming Subscription",
+          "price": 2818.94
+        }
+      ]
+    }
   },
   {
     "user_id": "roger.hughes@example.com",
@@ -501,7 +2072,33 @@
     "merchant": "MedPlus",
     "location": "Chennai",
     "timestamp": "2025-03-06T20:35:36.936978",
-    "category": "healthcare"
+    "category": "healthcare",
+    "payment_method": "card",
+    "currency": "EUR",
+    "tags": [
+      "healthcare",
+      "medicine",
+      "medical",
+      "night_transaction",
+      "personal"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 14,
+      "invoice_details": {
+        "invoice_number": "INV-3600",
+        "tax_amount": 842.13
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Prescription Medicine",
+          "price": 4210.65
+        },
+        {
+          "item": "Medical Test",
+          "price": 4210.65
+        }
+      ]
+    }
   },
   {
     "user_id": "roger.hughes@example.com",
@@ -509,7 +2106,27 @@
     "merchant": "Amazon",
     "location": "Mumbai",
     "timestamp": "2025-04-09T09:12:21.060581",
-    "category": "electronics"
+    "category": "electronics",
+    "payment_method": "card",
+    "currency": "USD",
+    "tags": [
+      "electronics",
+      "tech",
+      "gadgets"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 85,
+      "invoice_details": {
+        "invoice_number": "INV-5963",
+        "tax_amount": 605.04
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Tablet",
+          "price": 6050.44
+        }
+      ]
+    }
   },
   {
     "user_id": "roger.hughes@example.com",
@@ -517,7 +2134,36 @@
     "merchant": "D-Mart",
     "location": "Pune",
     "timestamp": "2024-08-20T19:00:32.714937",
-    "category": "groceries"
+    "category": "groceries",
+    "payment_method": "cash",
+    "currency": "EUR",
+    "tags": [
+      "groceries",
+      "household",
+      "essentials",
+      "gift"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 94,
+      "invoice_details": {
+        "invoice_number": "INV-8973",
+        "tax_amount": 848.79
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Groceries - Monthly",
+          "price": 2829.3
+        },
+        {
+          "item": "Dairy Products",
+          "price": 2829.3
+        },
+        {
+          "item": "Groceries - Monthly",
+          "price": 2829.3099999999995
+        }
+      ]
+    }
   },
   {
     "user_id": "roger.hughes@example.com",
@@ -525,7 +2171,31 @@
     "merchant": "More",
     "location": "Delhi",
     "timestamp": "2024-10-15T20:16:00.192662",
-    "category": "groceries"
+    "category": "groceries",
+    "payment_method": "card",
+    "currency": "EUR",
+    "tags": [
+      "groceries",
+      "household",
+      "essentials"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 32,
+      "invoice_details": {
+        "invoice_number": "INV-5515",
+        "tax_amount": 517.71
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Groceries - Monthly",
+          "price": 2588.55
+        },
+        {
+          "item": "Household Items",
+          "price": 2588.55
+        }
+      ]
+    }
   },
   {
     "user_id": "roger.hughes@example.com",
@@ -533,7 +2203,29 @@
     "merchant": "1mg",
     "location": "Hyderabad",
     "timestamp": "2024-09-05T03:00:55.922754",
-    "category": "healthcare"
+    "category": "healthcare",
+    "payment_method": "cash",
+    "currency": "EUR",
+    "tags": [
+      "healthcare",
+      "medicine",
+      "medical",
+      "personal",
+      "international"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 41,
+      "invoice_details": {
+        "invoice_number": "INV-8103",
+        "tax_amount": 554.3
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Medical Test",
+          "price": 5542.97
+        }
+      ]
+    }
   },
   {
     "user_id": "susan.santiago@example.com",
@@ -541,7 +2233,29 @@
     "merchant": "Upstox",
     "location": "Kolkata",
     "timestamp": "2025-05-03T08:48:25.773496",
-    "category": "investment"
+    "category": "investment",
+    "payment_method": "cash",
+    "currency": "EUR",
+    "tags": [
+      "investment",
+      "business",
+      "financial",
+      "business",
+      "personal"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 33,
+      "invoice_details": {
+        "invoice_number": "INV-4074",
+        "tax_amount": 890.8
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Stock Purchase",
+          "price": 8908.0
+        }
+      ]
+    }
   },
   {
     "user_id": "susan.santiago@example.com",
@@ -549,7 +2263,37 @@
     "merchant": "Amazon Fresh",
     "location": "Delhi",
     "timestamp": "2024-08-11T18:17:47.074135",
-    "category": "groceries"
+    "category": "groceries",
+    "payment_method": "card",
+    "currency": "EUR",
+    "tags": [
+      "groceries",
+      "household",
+      "essentials",
+      "gift",
+      "night_transaction"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 42,
+      "invoice_details": {
+        "invoice_number": "INV-5678",
+        "tax_amount": 588.69
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Groceries - Monthly",
+          "price": 1962.29
+        },
+        {
+          "item": "Household Items",
+          "price": 1962.28
+        },
+        {
+          "item": "Household Items",
+          "price": 1962.2899999999997
+        }
+      ]
+    }
   },
   {
     "user_id": "susan.santiago@example.com",
@@ -557,7 +2301,32 @@
     "merchant": "Reliance Digital",
     "location": "Pune",
     "timestamp": "2024-10-03T12:36:11.986179",
-    "category": "electronics"
+    "category": "electronics",
+    "payment_method": "card",
+    "currency": "INR",
+    "tags": [
+      "electronics",
+      "tech",
+      "gadgets",
+      "urgent"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 57,
+      "invoice_details": {
+        "invoice_number": "INV-8316",
+        "tax_amount": 878.32
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Headphones",
+          "price": 4391.57
+        },
+        {
+          "item": "Headphones",
+          "price": 4391.58
+        }
+      ]
+    }
   },
   {
     "user_id": "susan.santiago@example.com",
@@ -565,7 +2334,29 @@
     "merchant": "Amazon Prime",
     "location": "Hyderabad",
     "timestamp": "2025-05-17T01:35:42.670757",
-    "category": "entertainment"
+    "category": "entertainment",
+    "payment_method": "cash",
+    "currency": "EUR",
+    "tags": [
+      "entertainment",
+      "leisure",
+      "streaming",
+      "recurring",
+      "urgent"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 95,
+      "invoice_details": {
+        "invoice_number": "INV-3316",
+        "tax_amount": 984.75
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Game",
+          "price": 9847.55
+        }
+      ]
+    }
   },
   {
     "user_id": "susan.santiago@example.com",
@@ -573,7 +2364,28 @@
     "merchant": "Amazon",
     "location": "Bangalore",
     "timestamp": "2025-07-03T12:13:02.667826",
-    "category": "shopping"
+    "category": "shopping",
+    "payment_method": "cash",
+    "currency": "EUR",
+    "tags": [
+      "shopping",
+      "fashion",
+      "retail",
+      "recurring"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 35,
+      "invoice_details": {
+        "invoice_number": "INV-5280",
+        "tax_amount": 664.12
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Jewelry",
+          "price": 6641.22
+        }
+      ]
+    }
   },
   {
     "user_id": "susan.santiago@example.com",
@@ -581,7 +2393,35 @@
     "merchant": "Swiggy",
     "location": "Bangalore",
     "timestamp": "2025-03-29T11:56:49.804245",
-    "category": "dining"
+    "category": "dining",
+    "payment_method": "card",
+    "currency": "INR",
+    "tags": [
+      "dining",
+      "food_delivery",
+      "restaurant"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 59,
+      "invoice_details": {
+        "invoice_number": "INV-4025",
+        "tax_amount": 853.11
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Dinner",
+          "price": 2843.69
+        },
+        {
+          "item": "Lunch",
+          "price": 2843.69
+        },
+        {
+          "item": "Food Delivery",
+          "price": 2843.689999999999
+        }
+      ]
+    }
   },
   {
     "user_id": "susan.santiago@example.com",
@@ -589,7 +2429,32 @@
     "merchant": "Amazon Fresh",
     "location": "Bangalore",
     "timestamp": "2024-12-18T05:06:56.102785",
-    "category": "groceries"
+    "category": "groceries",
+    "payment_method": "card",
+    "currency": "INR",
+    "tags": [
+      "groceries",
+      "household",
+      "essentials",
+      "urgent"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 77,
+      "invoice_details": {
+        "invoice_number": "INV-8433",
+        "tax_amount": 520.83
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Groceries - Monthly",
+          "price": 2604.12
+        },
+        {
+          "item": "Fresh Vegetables",
+          "price": 2604.13
+        }
+      ]
+    }
   },
   {
     "user_id": "randy.williams@example.com",
@@ -597,7 +2462,32 @@
     "merchant": "Goibibo",
     "location": "Bangalore",
     "timestamp": "2024-08-16T23:56:54.082087",
-    "category": "travel"
+    "category": "travel",
+    "payment_method": "card",
+    "currency": "USD",
+    "tags": [
+      "travel",
+      "transportation",
+      "booking",
+      "night_transaction"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 51,
+      "invoice_details": {
+        "invoice_number": "INV-5266",
+        "tax_amount": 832.57
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Train Ticket - AC 2 Tier",
+          "price": 4162.85
+        },
+        {
+          "item": "Flight Ticket",
+          "price": 4162.84
+        }
+      ]
+    }
   },
   {
     "user_id": "randy.williams@example.com",
@@ -605,7 +2495,33 @@
     "merchant": "Paytm Money",
     "location": "Mumbai",
     "timestamp": "2025-04-20T00:11:56.630905",
-    "category": "investment"
+    "category": "investment",
+    "payment_method": "card",
+    "currency": "INR",
+    "tags": [
+      "investment",
+      "business",
+      "financial",
+      "recurring",
+      "international"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 21,
+      "invoice_details": {
+        "invoice_number": "INV-1663",
+        "tax_amount": 687.51
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Bond Investment",
+          "price": 3437.53
+        },
+        {
+          "item": "Stock Purchase",
+          "price": 3437.53
+        }
+      ]
+    }
   },
   {
     "user_id": "randy.williams@example.com",
@@ -613,7 +2529,35 @@
     "merchant": "Paytm Money",
     "location": "Hyderabad",
     "timestamp": "2024-10-16T11:33:37.321355",
-    "category": "investment"
+    "category": "investment",
+    "payment_method": "upi",
+    "currency": "USD",
+    "tags": [
+      "investment",
+      "business",
+      "financial"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 69,
+      "invoice_details": {
+        "invoice_number": "INV-5536",
+        "tax_amount": 798.58
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Mutual Fund",
+          "price": 2661.92
+        },
+        {
+          "item": "ETF",
+          "price": 2661.93
+        },
+        {
+          "item": "ETF",
+          "price": 2661.9200000000005
+        }
+      ]
+    }
   },
   {
     "user_id": "randy.williams@example.com",
@@ -621,7 +2565,28 @@
     "merchant": "Netflix",
     "location": "Delhi",
     "timestamp": "2025-07-05T11:45:51.632671",
-    "category": "entertainment"
+    "category": "entertainment",
+    "payment_method": "cash",
+    "currency": "USD",
+    "tags": [
+      "entertainment",
+      "leisure",
+      "streaming",
+      "gift"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 59,
+      "invoice_details": {
+        "invoice_number": "INV-4070",
+        "tax_amount": 792.97
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Game",
+          "price": 7929.65
+        }
+      ]
+    }
   },
   {
     "user_id": "randy.williams@example.com",
@@ -629,7 +2594,33 @@
     "merchant": "Amazon",
     "location": "Kolkata",
     "timestamp": "2024-10-07T13:14:14.365127",
-    "category": "electronics"
+    "category": "electronics",
+    "payment_method": "upi",
+    "currency": "EUR",
+    "tags": [
+      "electronics",
+      "tech",
+      "gadgets",
+      "urgent",
+      "gift"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 18,
+      "invoice_details": {
+        "invoice_number": "INV-1050",
+        "tax_amount": 714.36
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Smartphone",
+          "price": 3571.79
+        },
+        {
+          "item": "Laptop",
+          "price": 3571.79
+        }
+      ]
+    }
   },
   {
     "user_id": "randy.williams@example.com",
@@ -637,7 +2628,33 @@
     "merchant": "Byju's",
     "location": "Ahmedabad",
     "timestamp": "2024-10-08T13:44:52.952969",
-    "category": "education"
+    "category": "education",
+    "payment_method": "online",
+    "currency": "EUR",
+    "tags": [
+      "education",
+      "online_course",
+      "learning",
+      "night_transaction",
+      "international"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 65,
+      "invoice_details": {
+        "invoice_number": "INV-7677",
+        "tax_amount": 631.14
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Python Programming Course",
+          "price": 3155.72
+        },
+        {
+          "item": "Web Development",
+          "price": 3155.73
+        }
+      ]
+    }
   },
   {
     "user_id": "randy.williams@example.com",
@@ -645,7 +2662,31 @@
     "merchant": "Coursera",
     "location": "Hyderabad",
     "timestamp": "2025-01-11T15:00:03.635150",
-    "category": "education"
+    "category": "education",
+    "payment_method": "upi",
+    "currency": "INR",
+    "tags": [
+      "education",
+      "online_course",
+      "learning"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 15,
+      "invoice_details": {
+        "invoice_number": "INV-6012",
+        "tax_amount": 948.13
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Web Development",
+          "price": 4740.64
+        },
+        {
+          "item": "Python Programming Course",
+          "price": 4740.64
+        }
+      ]
+    }
   },
   {
     "user_id": "randy.williams@example.com",
@@ -653,7 +2694,36 @@
     "merchant": "Grofers",
     "location": "Kolkata",
     "timestamp": "2025-07-20T23:30:30.891006",
-    "category": "groceries"
+    "category": "groceries",
+    "payment_method": "card",
+    "currency": "INR",
+    "tags": [
+      "groceries",
+      "household",
+      "essentials",
+      "urgent"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 14,
+      "invoice_details": {
+        "invoice_number": "INV-5846",
+        "tax_amount": 881.77
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Groceries - Monthly",
+          "price": 2939.24
+        },
+        {
+          "item": "Fresh Vegetables",
+          "price": 2939.24
+        },
+        {
+          "item": "Groceries - Monthly",
+          "price": 2939.25
+        }
+      ]
+    }
   },
   {
     "user_id": "randy.williams@example.com",
@@ -661,7 +2731,31 @@
     "merchant": "Reliance Fresh",
     "location": "Chennai",
     "timestamp": "2024-10-27T18:02:19.310575",
-    "category": "groceries"
+    "category": "groceries",
+    "payment_method": "card",
+    "currency": "EUR",
+    "tags": [
+      "groceries",
+      "household",
+      "essentials"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 97,
+      "invoice_details": {
+        "invoice_number": "INV-9113",
+        "tax_amount": 707.57
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Groceries - Monthly",
+          "price": 3537.83
+        },
+        {
+          "item": "Dairy Products",
+          "price": 3537.83
+        }
+      ]
+    }
   },
   {
     "user_id": "randy.williams@example.com",
@@ -669,7 +2763,29 @@
     "merchant": "Croma",
     "location": "Pune",
     "timestamp": "2024-09-21T22:44:11.620205",
-    "category": "electronics"
+    "category": "electronics",
+    "payment_method": "online",
+    "currency": "INR",
+    "tags": [
+      "electronics",
+      "tech",
+      "gadgets",
+      "business",
+      "urgent"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 63,
+      "invoice_details": {
+        "invoice_number": "INV-6619",
+        "tax_amount": 776.14
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Tablet",
+          "price": 7761.35
+        }
+      ]
+    }
   },
   {
     "user_id": "randy.williams@example.com",
@@ -677,7 +2793,35 @@
     "merchant": "BSES",
     "location": "Bangalore",
     "timestamp": "2025-02-02T14:03:09.920090",
-    "category": "utilities"
+    "category": "utilities",
+    "payment_method": "upi",
+    "currency": "EUR",
+    "tags": [
+      "utilities",
+      "bills",
+      "services"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 23,
+      "invoice_details": {
+        "invoice_number": "INV-9853",
+        "tax_amount": 593.07
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Electricity Bill",
+          "price": 1976.9
+        },
+        {
+          "item": "Water Bill",
+          "price": 1976.9
+        },
+        {
+          "item": "Electricity Bill",
+          "price": 1976.8999999999996
+        }
+      ]
+    }
   },
   {
     "user_id": "patricia.johnson@example.com",
@@ -685,7 +2829,35 @@
     "merchant": "Uber Eats",
     "location": "Bangalore",
     "timestamp": "2025-05-31T02:41:37.621130",
-    "category": "dining"
+    "category": "dining",
+    "payment_method": "cash",
+    "currency": "EUR",
+    "tags": [
+      "dining",
+      "food_delivery",
+      "restaurant"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 13,
+      "invoice_details": {
+        "invoice_number": "INV-5059",
+        "tax_amount": 986.72
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Food Delivery",
+          "price": 3289.05
+        },
+        {
+          "item": "Coffee",
+          "price": 3289.05
+        },
+        {
+          "item": "Dinner",
+          "price": 3289.0499999999993
+        }
+      ]
+    }
   },
   {
     "user_id": "patricia.johnson@example.com",
@@ -693,7 +2865,27 @@
     "merchant": "Croma",
     "location": "Hyderabad",
     "timestamp": "2024-12-07T05:26:11.108864",
-    "category": "electronics"
+    "category": "electronics",
+    "payment_method": "cash",
+    "currency": "USD",
+    "tags": [
+      "electronics",
+      "tech",
+      "gadgets"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 92,
+      "invoice_details": {
+        "invoice_number": "INV-8541",
+        "tax_amount": 610.74
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Laptop",
+          "price": 6107.44
+        }
+      ]
+    }
   },
   {
     "user_id": "patricia.johnson@example.com",
@@ -701,7 +2893,31 @@
     "merchant": "Flipkart",
     "location": "Ahmedabad",
     "timestamp": "2024-07-27T22:49:04.698395",
-    "category": "shopping"
+    "category": "shopping",
+    "payment_method": "card",
+    "currency": "USD",
+    "tags": [
+      "shopping",
+      "fashion",
+      "retail"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 26,
+      "invoice_details": {
+        "invoice_number": "INV-8548",
+        "tax_amount": 865.74
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Handbag",
+          "price": 4328.72
+        },
+        {
+          "item": "Handbag",
+          "price": 4328.71
+        }
+      ]
+    }
   },
   {
     "user_id": "patricia.johnson@example.com",
@@ -709,7 +2925,32 @@
     "merchant": "BigBasket",
     "location": "Hyderabad",
     "timestamp": "2025-04-28T06:31:18.099079",
-    "category": "groceries"
+    "category": "groceries",
+    "payment_method": "cash",
+    "currency": "INR",
+    "tags": [
+      "groceries",
+      "household",
+      "essentials",
+      "gift"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 89,
+      "invoice_details": {
+        "invoice_number": "INV-7122",
+        "tax_amount": 565.24
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Groceries - Monthly",
+          "price": 2826.21
+        },
+        {
+          "item": "Groceries - Monthly",
+          "price": 2826.21
+        }
+      ]
+    }
   },
   {
     "user_id": "patricia.johnson@example.com",
@@ -717,7 +2958,33 @@
     "merchant": "Airtel",
     "location": "Ahmedabad",
     "timestamp": "2025-03-08T10:04:51.619540",
-    "category": "utilities"
+    "category": "utilities",
+    "payment_method": "card",
+    "currency": "USD",
+    "tags": [
+      "utilities",
+      "bills",
+      "services",
+      "international",
+      "urgent"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 49,
+      "invoice_details": {
+        "invoice_number": "INV-6217",
+        "tax_amount": 654.13
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Water Bill",
+          "price": 3270.66
+        },
+        {
+          "item": "Mobile Bill",
+          "price": 3270.66
+        }
+      ]
+    }
   },
   {
     "user_id": "patricia.johnson@example.com",
@@ -725,7 +2992,35 @@
     "merchant": "Netmeds",
     "location": "Chennai",
     "timestamp": "2025-06-22T14:44:29.400869",
-    "category": "healthcare"
+    "category": "healthcare",
+    "payment_method": "cash",
+    "currency": "INR",
+    "tags": [
+      "healthcare",
+      "medicine",
+      "medical"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 38,
+      "invoice_details": {
+        "invoice_number": "INV-1737",
+        "tax_amount": 942.82
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Prescription Medicine",
+          "price": 3142.74
+        },
+        {
+          "item": "Medical Test",
+          "price": 3142.74
+        },
+        {
+          "item": "Prescription Medicine",
+          "price": 3142.75
+        }
+      ]
+    }
   },
   {
     "user_id": "patricia.johnson@example.com",
@@ -733,7 +3028,36 @@
     "merchant": "Jio",
     "location": "Bangalore",
     "timestamp": "2024-09-20T05:52:36.600542",
-    "category": "utilities"
+    "category": "utilities",
+    "payment_method": "online",
+    "currency": "USD",
+    "tags": [
+      "utilities",
+      "bills",
+      "services",
+      "gift"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 81,
+      "invoice_details": {
+        "invoice_number": "INV-6795",
+        "tax_amount": 966.73
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Internet Bill",
+          "price": 3222.43
+        },
+        {
+          "item": "Mobile Bill",
+          "price": 3222.43
+        },
+        {
+          "item": "Mobile Bill",
+          "price": 3222.4300000000007
+        }
+      ]
+    }
   },
   {
     "user_id": "patricia.johnson@example.com",
@@ -741,7 +3065,31 @@
     "merchant": "ICICI Direct",
     "location": "Hyderabad",
     "timestamp": "2025-04-03T19:55:57.944646",
-    "category": "investment"
+    "category": "investment",
+    "payment_method": "card",
+    "currency": "EUR",
+    "tags": [
+      "investment",
+      "business",
+      "financial"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 75,
+      "invoice_details": {
+        "invoice_number": "INV-1467",
+        "tax_amount": 989.17
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Mutual Fund",
+          "price": 4945.85
+        },
+        {
+          "item": "ETF",
+          "price": 4945.859999999999
+        }
+      ]
+    }
   },
   {
     "user_id": "patricia.johnson@example.com",
@@ -749,7 +3097,36 @@
     "merchant": "Reliance Digital",
     "location": "Kolkata",
     "timestamp": "2024-08-25T08:30:33.408900",
-    "category": "electronics"
+    "category": "electronics",
+    "payment_method": "card",
+    "currency": "EUR",
+    "tags": [
+      "electronics",
+      "tech",
+      "gadgets",
+      "night_transaction"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 66,
+      "invoice_details": {
+        "invoice_number": "INV-8022",
+        "tax_amount": 962.77
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Laptop",
+          "price": 3209.24
+        },
+        {
+          "item": "Laptop",
+          "price": 3209.24
+        },
+        {
+          "item": "Headphones",
+          "price": 3209.24
+        }
+      ]
+    }
   },
   {
     "user_id": "patricia.johnson@example.com",
@@ -757,7 +3134,36 @@
     "merchant": "Zerodha",
     "location": "Mumbai",
     "timestamp": "2025-03-03T07:16:00.300672",
-    "category": "investment"
+    "category": "investment",
+    "payment_method": "cash",
+    "currency": "USD",
+    "tags": [
+      "investment",
+      "business",
+      "financial",
+      "recurring"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 85,
+      "invoice_details": {
+        "invoice_number": "INV-9473",
+        "tax_amount": 769.4
+      },
+      "itemized_breakdown": [
+        {
+          "item": "ETF",
+          "price": 2564.66
+        },
+        {
+          "item": "ETF",
+          "price": 2564.66
+        },
+        {
+          "item": "Bond Investment",
+          "price": 2564.66
+        }
+      ]
+    }
   },
   {
     "user_id": "patricia.johnson@example.com",
@@ -765,6 +3171,28 @@
     "merchant": "Nykaa",
     "location": "Kolkata",
     "timestamp": "2025-03-16T11:14:55.197495",
-    "category": "shopping"
+    "category": "shopping",
+    "payment_method": "card",
+    "currency": "INR",
+    "tags": [
+      "shopping",
+      "fashion",
+      "retail",
+      "gift",
+      "personal"
+    ],
+    "metadata": {
+      "loyalty_points_earned": 78,
+      "invoice_details": {
+        "invoice_number": "INV-5249",
+        "tax_amount": 870.35
+      },
+      "itemized_breakdown": [
+        {
+          "item": "Jewelry",
+          "price": 8703.51
+        }
+      ]
+    }
   }
 ]
