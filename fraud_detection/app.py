@@ -92,7 +92,6 @@ def transaction_to_text(txn):
     
     return " ".join(text_parts)
 
-@st.cache_data
 def load_fraud_vectors():
     """Load known fraud vectors and build FAISS index"""
     try:
@@ -215,14 +214,100 @@ def get_fraud_explanation(txn, similarity_score, is_fraud):
     
     return explanation
 
-def is_similar(new_vec, index, threshold=0.85):
+def is_similar(new_vec, index, threshold=0.7):
     """Check if a vector is similar to known fraud patterns"""
     if index is None:
         return 0.0, False
     
     D, I = index.search(np.array([new_vec]).astype("float32"), 1)
     similarity = 1 - D[0][0]
-    return similarity, similarity > threshold
+    is_fraud = similarity > threshold
+    
+    # Debug: Print similarity and threshold for high similarity cases
+    if similarity > 0.9:
+        print(f"DEBUG: Similarity={similarity:.3f}, Threshold={threshold:.3f}, Is_Fraud={is_fraud}")
+    
+    return similarity, is_fraud
+
+def analyze_ml_concerns(txn, probability, threshold, model_name):
+    """Analyze ML-based transaction concerns and provide insights"""
+    concerns = []
+    
+    # High probability concerns
+    if probability > 0.8:
+        concerns.append(f"Very high fraud probability ({probability:.1%}) - strongly suspicious")
+    elif probability > 0.6:
+        concerns.append(f"High fraud probability ({probability:.1%}) - moderately suspicious")
+    elif probability > threshold:
+        concerns.append(f"Above threshold probability ({probability:.1%}) - slightly suspicious")
+    
+    # Amount-based concerns
+    if 'amount' in txn:
+        try:
+            amount = float(txn['amount'])
+            if amount > 10000:
+                concerns.append(f"High transaction amount: ₹{amount:,.2f}")
+            elif amount < 1:
+                concerns.append(f"Suspiciously low amount: ₹{amount:.2f}")
+        except (ValueError, TypeError):
+            concerns.append("Invalid amount format")
+    
+    # Time-based concerns
+    if 'timestamp' in txn:
+        time_str = str(txn['timestamp'])
+        if '23:' in time_str or '00:' in time_str or '01:' in time_str:
+            concerns.append("Unusual transaction time (late night)")
+    
+    # Location concerns
+    if 'location' in txn:
+        location = str(txn['location'])
+        suspicious_locations = ['unknown', 'offshore', 'tax_haven', 'cayman']
+        if any(susp in location.lower() for susp in suspicious_locations):
+            concerns.append(f"Suspicious location: {location}")
+    
+    # Merchant concerns
+    if 'merchant' in txn:
+        merchant = str(txn['merchant']).lower()
+        suspicious_merchants = ['unknown', 'offshore', 'unregistered', 'casino', 'crypto']
+        if any(susp in merchant for susp in suspicious_merchants):
+            concerns.append(f"Suspicious merchant: {txn['merchant']}")
+    
+    # Category concerns
+    if 'category' in txn:
+        category = str(txn['category']).lower()
+        high_risk_categories = ['gambling', 'crypto', 'adult', 'illegal', 'unknown']
+        if any(risk in category for risk in high_risk_categories):
+            concerns.append(f"High-risk category: {txn['category']}")
+    
+    # Payment method concerns
+    if 'payment_method' in txn:
+        payment_method = str(txn['payment_method']).lower()
+        if 'cash' in payment_method and 'amount' in txn:
+            try:
+                amount = float(txn['amount'])
+                if amount > 1000:
+                    concerns.append(f"High cash transaction: ₹{amount:,.2f}")
+            except (ValueError, TypeError):
+                pass
+    
+    # Currency concerns
+    if 'currency' in txn:
+        currency = str(txn['currency']).upper()
+        if currency not in ['INR']:
+            concerns.append(f"Foreign currency transaction: {currency}")
+    
+    # Model-specific insights
+    if model_name == 'isolation_forest':
+        if probability > 0.7:
+            concerns.append("Anomaly detection model flags this as highly unusual")
+    elif model_name == 'random_forest':
+        if probability > 0.6:
+            concerns.append("Random Forest model detects multiple risk factors")
+    elif model_name == 'logistic_regression':
+        if probability > 0.5:
+            concerns.append("Linear model suggests moderate risk factors")
+    
+    return concerns
 
 def main():
     # Header
@@ -240,7 +325,13 @@ def main():
         
         # Settings
         st.subheader("Settings")
-        threshold = st.slider("Fraud Detection Threshold", 0.0, 1.0, 0.85, 0.05)
+        threshold = st.slider("Fraud Detection Threshold", 0.0, 1.0, 0.7, 0.05)
+        
+        # Reload fraud vectors button
+        if st.button("🔄 Reload Fraud Database"):
+            st.cache_data.clear()
+            st.success("Fraud database reloaded! Please refresh the page.")
+            st.rerun()
         
         # File upload
         uploaded_file = st.file_uploader(
@@ -345,6 +436,10 @@ def main():
         
         ml_system = st.session_state.ml_system
         
+        # Clear any existing model performance to ensure fresh training
+        if hasattr(ml_system, 'model_performance'):
+            ml_system.model_performance = {}
+        
         # Model training section
         st.subheader("Train ML Models")
         
@@ -367,6 +462,11 @@ def main():
             if st.button("🎯 Train Models") and 'training_transactions' in st.session_state:
                 with st.spinner("Training ML models..."):
                     try:
+                        # Clear existing models to ensure fresh training
+                        ml_system.models = {}
+                        ml_system.model_performance = {}
+                        
+                        # Train models and get real performance metrics
                         performance = ml_system.train_models(st.session_state.training_transactions)
                         st.session_state.model_performance = performance
                         st.success("Models trained successfully!")
@@ -391,37 +491,6 @@ def main():
             ])
             
             st.dataframe(performance_df, use_container_width=True)
-        
-        # Feature importance
-        if hasattr(ml_system, 'models') and ml_system.models:
-            st.subheader("Feature Importance")
-            
-            model_choice = st.selectbox(
-                "Select model for feature importance:",
-                list(ml_system.models.keys())
-            )
-            
-            if st.button("Show Feature Importance"):
-                try:
-                    importance_df = ml_system.get_feature_importance(model_choice)
-                    if importance_df is not None:
-                        # Show top 15 features
-                        top_features = importance_df.head(15)
-                        
-                        fig = px.bar(
-                            top_features, 
-                            x='importance', 
-                            y='feature',
-                            orientation='h',
-                            title=f"Top 15 Features - {model_choice.replace('_', ' ').title()}"
-                        )
-                        st.plotly_chart(fig, use_container_width=True)
-                        
-                        st.dataframe(importance_df, use_container_width=True)
-                    else:
-                        st.warning("Feature importance not available for this model")
-                except Exception as e:
-                    st.error(f"Error getting feature importance: {e}")
         
         # ML-based prediction
         st.subheader("ML-Based Fraud Detection")
@@ -465,10 +534,21 @@ def main():
                         for i, (txn, pred, prob) in enumerate(zip(st.session_state.transactions, predictions, probabilities)):
                             is_fraud_ml = pred == 1
                             
+                            # Analyze ML concerns
+                            concerns = analyze_ml_concerns(txn, prob, threshold, model_choice)
+                            
                             if is_fraud_ml:
                                 with st.expander(f"🤖 ML Fraud Alert - Transaction {i+1} (Probability: {prob:.3f})"):
                                     st.json(txn)
                                     st.markdown(f"**ML Analysis:** This transaction has a {prob:.1%} probability of being fraudulent according to the {model_choice} model.")
+                                    
+                                    # Show concerns
+                                    if concerns:
+                                        st.markdown("**Suspicious indicators detected:**")
+                                        for concern in concerns:
+                                            st.markdown(f"• {concern}")
+                                    else:
+                                        st.markdown("**No obvious suspicious indicators, but ML model detects fraud patterns.**")
                                     
                                     # Compare with rule-based
                                     if 'analysis_results' in st.session_state:
@@ -478,6 +558,14 @@ def main():
                                 with st.expander(f"🤖 ML Normal - Transaction {i+1} (Probability: {prob:.3f})"):
                                     st.json(txn)
                                     st.info(f"This transaction has a {prob:.1%} probability of being fraudulent according to the {model_choice} model, which is below the threshold of {threshold:.1%}.")
+                                    
+                                    # Show minor concerns for normal transactions
+                                    if concerns:
+                                        st.markdown("**Minor concerns detected:**")
+                                        for concern in concerns:
+                                            st.markdown(f"• {concern}")
+                                    else:
+                                        st.markdown("**No concerns detected - transaction appears normal.**")
                         
                     except Exception as e:
                         st.error(f"Error in ML analysis: {e}")
@@ -495,17 +583,6 @@ def main():
             fraud_df = pd.DataFrame(fraud_meta)
             
             if not fraud_df.empty:
-                # Amount distribution
-                if 'amount' in fraud_df.columns:
-                    st.subheader("Fraud Amount Distribution")
-                    try:
-                        amounts = pd.to_numeric(fraud_df['amount'], errors='coerce').dropna()
-                        if not amounts.empty:
-                            fig = px.histogram(amounts, title="Distribution of Fraud Amounts")
-                            st.plotly_chart(fig, use_container_width=True)
-                    except:
-                        st.info("Could not analyze amount distribution")
-                
                 # Location analysis
                 if 'location' in fraud_df.columns:
                     st.subheader("Fraud by Location")
