@@ -19,6 +19,11 @@
     "is_education",
     "is_food",
     "is_transport",
+    "is_healthcare",
+    "is_investment",
+    "is_travel",
+    "is_groceries",
+    "is_dining",
     "merchant_encoded",
     "is_recurring",
     "is_monthly",
@@ -40,20 +45,16 @@
   ],
   "model_performance": {
     "random_forest": {
-      "accuracy": 0.5714285714285714,
-      "auc": 0.8
+      "accuracy": 0.7142857142857143
     },
     "logistic_regression": {
-      "accuracy": 0.7142857142857143,
-      "auc": 0.9
+      "accuracy": 0.8571428571428571
     },
     "svm": {
-      "accuracy": 0.7142857142857143,
-      "auc": 0.4
+      "accuracy": 0.7142857142857143
     },
     "isolation_forest": {
-      "accuracy": 0.8571428571428571,
-      "auc": 0.9
+      "accuracy": 0.7142857142857143
     }
   }
 }
